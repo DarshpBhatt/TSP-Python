@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_05ba1c7d3542671027b4e67c714d687a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_05ba1c7d3542671027b4e67c714d687a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_05ba1c7d3542671027b4e67c714d687a = L.map(
+                "map_05ba1c7d3542671027b4e67c714d687a",
+                {
+                    center: [44.6539519, -63.59723509999999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e04db7eea298a44e836b122b0e298d2d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e04db7eea298a44e836b122b0e298d2d.addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var marker_29f9457ccc68afe4edb95947261a93d3 = L.marker(
+                [44.6539519, -63.59723509999999],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_07f722942901496d231a9292412b9277 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e1\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_29f9457ccc68afe4edb95947261a93d3.setIcon(div_icon_07f722942901496d231a9292412b9277);
+        
+    
+        var popup_0a72f176ce06b83af4e1cb985343c7a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_074a39a46559fb35d0f96f4fcb95b143 = $(`<div id="html_074a39a46559fb35d0f96f4fcb95b143" style="width: 100.0%; height: 100.0%;">Stop 1: 2618 Clifton St, Halifax, NS B3K 4V1</div>`)[0];
+                popup_0a72f176ce06b83af4e1cb985343c7a4.setContent(html_074a39a46559fb35d0f96f4fcb95b143);
+            
+        
+
+        marker_29f9457ccc68afe4edb95947261a93d3.bindPopup(popup_0a72f176ce06b83af4e1cb985343c7a4)
+        ;
+
+        
+    
+    
+            var marker_79e9b32c654917e2b07f5cbcdbb1e915 = L.marker(
+                [44.6567012, -63.60019999999999],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_70e9e2ac8e97aa843d6cc697aa84d0a6 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e2\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_79e9b32c654917e2b07f5cbcdbb1e915.setIcon(div_icon_70e9e2ac8e97aa843d6cc697aa84d0a6);
+        
+    
+        var popup_a22639c7192e0d0728a1c26fe9346f25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_251a5f9dcf3c72d54bb5d597503ec999 = $(`<div id="html_251a5f9dcf3c72d54bb5d597503ec999" style="width: 100.0%; height: 100.0%;">Stop 2: 6055 Almon St, Halifax, NS B3K 1T9</div>`)[0];
+                popup_a22639c7192e0d0728a1c26fe9346f25.setContent(html_251a5f9dcf3c72d54bb5d597503ec999);
+            
+        
+
+        marker_79e9b32c654917e2b07f5cbcdbb1e915.bindPopup(popup_a22639c7192e0d0728a1c26fe9346f25)
+        ;
+
+        
+    
+    
+            var marker_d66286901ddbf592f5bed0b33f7503e0 = L.marker(
+                [44.6636954, -63.6031978],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_92c7d6dd16a7c78df4c7ecb233750bcd = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e3\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_d66286901ddbf592f5bed0b33f7503e0.setIcon(div_icon_92c7d6dd16a7c78df4c7ecb233750bcd);
+        
+    
+        var popup_29fc3ac7ccca8d38a41fc29ba3cc189d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5789ae0430917cfa7d3450b208ea9b9d = $(`<div id="html_5789ae0430917cfa7d3450b208ea9b9d" style="width: 100.0%; height: 100.0%;">Stop 3: 3248 Isleville St #5, Halifax, NS B3K 3Y5</div>`)[0];
+                popup_29fc3ac7ccca8d38a41fc29ba3cc189d.setContent(html_5789ae0430917cfa7d3450b208ea9b9d);
+            
+        
+
+        marker_d66286901ddbf592f5bed0b33f7503e0.bindPopup(popup_29fc3ac7ccca8d38a41fc29ba3cc189d)
+        ;
+
+        
+    
+    
+            var marker_4c3f412ab2b75238f84088a7adda0252 = L.marker(
+                [44.6692703, -63.60980029999999],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_41a83f2e1857c40938670bece2f912b9 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e4\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_4c3f412ab2b75238f84088a7adda0252.setIcon(div_icon_41a83f2e1857c40938670bece2f912b9);
+        
+    
+        var popup_2113673b1708ba6aba05b3764f23df51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc06132fd8ad69fce951a18d8bf1fa5a = $(`<div id="html_bc06132fd8ad69fce951a18d8bf1fa5a" style="width: 100.0%; height: 100.0%;">Stop 4: 3647 Leaman St, Halifax NS B3K 4A2</div>`)[0];
+                popup_2113673b1708ba6aba05b3764f23df51.setContent(html_bc06132fd8ad69fce951a18d8bf1fa5a);
+            
+        
+
+        marker_4c3f412ab2b75238f84088a7adda0252.bindPopup(popup_2113673b1708ba6aba05b3764f23df51)
+        ;
+
+        
+    
+    
+            var marker_099f511a2ecf8712819cdddf29e75ec3 = L.marker(
+                [44.6557438, -63.5846496],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_ea94bde884eb15145c2ac7fbf7f079d0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e5\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_099f511a2ecf8712819cdddf29e75ec3.setIcon(div_icon_ea94bde884eb15145c2ac7fbf7f079d0);
+        
+    
+        var popup_79012a5c49d17f42eb913f0a287f7969 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e6708300d8da311648aaeec0f4f3677 = $(`<div id="html_6e6708300d8da311648aaeec0f4f3677" style="width: 100.0%; height: 100.0%;">Stop 5: 5214 Gerrish St, Halifax, NS B3K 5K3</div>`)[0];
+                popup_79012a5c49d17f42eb913f0a287f7969.setContent(html_6e6708300d8da311648aaeec0f4f3677);
+            
+        
+
+        marker_099f511a2ecf8712819cdddf29e75ec3.bindPopup(popup_79012a5c49d17f42eb913f0a287f7969)
+        ;
+
+        
+    
+    
+            var marker_e5e3d99dbc4186a9cca597468ea42bc0 = L.marker(
+                [44.650165, -63.5768619],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_48a9d16147b14138cb230457ca1d13f1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e6\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_e5e3d99dbc4186a9cca597468ea42bc0.setIcon(div_icon_48a9d16147b14138cb230457ca1d13f1);
+        
+    
+        var popup_b7193b2114329b2d0b521511f835ae65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14651a7332ddf0bb2f5414e250db31b7 = $(`<div id="html_14651a7332ddf0bb2f5414e250db31b7" style="width: 100.0%; height: 100.0%;">Stop 6: 1899 Albemarle St, Halifax, NS B3J 4A9</div>`)[0];
+                popup_b7193b2114329b2d0b521511f835ae65.setContent(html_14651a7332ddf0bb2f5414e250db31b7);
+            
+        
+
+        marker_e5e3d99dbc4186a9cca597468ea42bc0.bindPopup(popup_b7193b2114329b2d0b521511f835ae65)
+        ;
+
+        
+    
+    
+            var marker_d4f93a5dc61df27f54bc9d87a030117a = L.marker(
+                [44.6498362, -63.5779134],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_15097c53c98f84afebb6b9d5a853956f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e7\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_d4f93a5dc61df27f54bc9d87a030117a.setIcon(div_icon_15097c53c98f84afebb6b9d5a853956f);
+        
+    
+        var popup_5192fe0e252f2ec0eda444f8d745c599 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b97331cebbfa3b2c29456e52a7448b7f = $(`<div id="html_b97331cebbfa3b2c29456e52a7448b7f" style="width: 100.0%; height: 100.0%;">Stop 7: 1991 Brunswick St, Halifax, NS B3J 3J8</div>`)[0];
+                popup_5192fe0e252f2ec0eda444f8d745c599.setContent(html_b97331cebbfa3b2c29456e52a7448b7f);
+            
+        
+
+        marker_d4f93a5dc61df27f54bc9d87a030117a.bindPopup(popup_5192fe0e252f2ec0eda444f8d745c599)
+        ;
+
+        
+    
+    
+            var marker_5aebbef79bc62a7eca36549d9d5adc3f = L.marker(
+                [44.64631139999999, -63.5718544],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_19a5c3e22e073185fcc72f2db109c76e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e8\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_5aebbef79bc62a7eca36549d9d5adc3f.setIcon(div_icon_19a5c3e22e073185fcc72f2db109c76e);
+        
+    
+        var popup_a9f9231c8e1338b6cec5fafa4f9487f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c38bc04770d274849942f4e8d1aa32b9 = $(`<div id="html_c38bc04770d274849942f4e8d1aa32b9" style="width: 100.0%; height: 100.0%;">Stop 8: 1583 Hollis St, Halifax, NS B3J 0E4</div>`)[0];
+                popup_a9f9231c8e1338b6cec5fafa4f9487f0.setContent(html_c38bc04770d274849942f4e8d1aa32b9);
+            
+        
+
+        marker_5aebbef79bc62a7eca36549d9d5adc3f.bindPopup(popup_a9f9231c8e1338b6cec5fafa4f9487f0)
+        ;
+
+        
+    
+    
+            var marker_04944fae9bfab7299d298cc4fe198c0e = L.marker(
+                [44.6429513, -63.57854769999999],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_65aaece6bd0601d83c48c816cb12854e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e9\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_04944fae9bfab7299d298cc4fe198c0e.setIcon(div_icon_65aaece6bd0601d83c48c816cb12854e);
+        
+    
+        var popup_a91e2c3732d36ede4005029759321471 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06c7735d3fa0ac9de77099f2038e97c6 = $(`<div id="html_06c7735d3fa0ac9de77099f2038e97c6" style="width: 100.0%; height: 100.0%;">Stop 9: 5657 Spring Garden Rd, Halifax, NS B3J 3R4</div>`)[0];
+                popup_a91e2c3732d36ede4005029759321471.setContent(html_06c7735d3fa0ac9de77099f2038e97c6);
+            
+        
+
+        marker_04944fae9bfab7299d298cc4fe198c0e.bindPopup(popup_a91e2c3732d36ede4005029759321471)
+        ;
+
+        
+    
+    
+            var marker_4948fc25ceb5a811f73d0221f25da6c6 = L.marker(
+                [44.6405701, -63.57821449999999],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_cbfeaa8a399e8ad4df1943cde6596934 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e10\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_4948fc25ceb5a811f73d0221f25da6c6.setIcon(div_icon_cbfeaa8a399e8ad4df1943cde6596934);
+        
+    
+        var popup_65c556e98f94544a5178fec4a7be689f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0880d003d87b9c84eeef06deeb8a495f = $(`<div id="html_0880d003d87b9c84eeef06deeb8a495f" style="width: 100.0%; height: 100.0%;">Stop 10: 1333 South Park St, Halifax NS B3J 2K9</div>`)[0];
+                popup_65c556e98f94544a5178fec4a7be689f.setContent(html_0880d003d87b9c84eeef06deeb8a495f);
+            
+        
+
+        marker_4948fc25ceb5a811f73d0221f25da6c6.bindPopup(popup_65c556e98f94544a5178fec4a7be689f)
+        ;
+
+        
+    
+    
+            var marker_3918f30ce5aa249b2e1d7c238a913ede = L.marker(
+                [44.6381312, -63.5759291],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_f7ef7f9e4deba739480a4dbc5c831089 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e11\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_3918f30ce5aa249b2e1d7c238a913ede.setIcon(div_icon_f7ef7f9e4deba739480a4dbc5c831089);
+        
+    
+        var popup_0d97d09d420ef8d8b2b64501220a3121 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b21da032880c82e7428bd5047d42f3c = $(`<div id="html_2b21da032880c82e7428bd5047d42f3c" style="width: 100.0%; height: 100.0%;">Stop 11: 5633 Fenwick St, Halifax, NS B3H 1R2</div>`)[0];
+                popup_0d97d09d420ef8d8b2b64501220a3121.setContent(html_2b21da032880c82e7428bd5047d42f3c);
+            
+        
+
+        marker_3918f30ce5aa249b2e1d7c238a913ede.bindPopup(popup_0d97d09d420ef8d8b2b64501220a3121)
+        ;
+
+        
+    
+    
+            var marker_bd5519c17d4632fc09b40bb185f2ab13 = L.marker(
+                [44.6290413, -63.571341],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_7736d5675a975eafaa1b16bec5c19885 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e12\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_bd5519c17d4632fc09b40bb185f2ab13.setIcon(div_icon_7736d5675a975eafaa1b16bec5c19885);
+        
+    
+        var popup_ed9e9a1cb1e2f213eadb00e5e9aff8c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72b37894246bd5898e704462c1afa2d6 = $(`<div id="html_72b37894246bd5898e704462c1afa2d6" style="width: 100.0%; height: 100.0%;">Stop 12: 5651 Ogilvie St, Halifax, NS B3H 1B8</div>`)[0];
+                popup_ed9e9a1cb1e2f213eadb00e5e9aff8c2.setContent(html_72b37894246bd5898e704462c1afa2d6);
+            
+        
+
+        marker_bd5519c17d4632fc09b40bb185f2ab13.bindPopup(popup_ed9e9a1cb1e2f213eadb00e5e9aff8c2)
+        ;
+
+        
+    
+    
+            var marker_ac4a2ad6dee1645af4ee355b61b9cecd = L.marker(
+                [44.6313301, -63.58145709999999],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_e4c28369cfe4e3cb2ef05c6d3d6f577a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e13\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_ac4a2ad6dee1645af4ee355b61b9cecd.setIcon(div_icon_e4c28369cfe4e3cb2ef05c6d3d6f577a);
+        
+    
+        var popup_fb55c3910052f0e29546bade0ce21689 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_090075079fc716f729c583b8f0605840 = $(`<div id="html_090075079fc716f729c583b8f0605840" style="width: 100.0%; height: 100.0%;">Stop 13: 923 Robie St, Halifax, NS B3H 3C3</div>`)[0];
+                popup_fb55c3910052f0e29546bade0ce21689.setContent(html_090075079fc716f729c583b8f0605840);
+            
+        
+
+        marker_ac4a2ad6dee1645af4ee355b61b9cecd.bindPopup(popup_fb55c3910052f0e29546bade0ce21689)
+        ;
+
+        
+    
+    
+            var marker_a18013e200cb2d9c0bd99a3d67160955 = L.marker(
+                [44.6361842, -63.59313919999999],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_70a385de22baed8cbe28eb752f8c0ea6 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e14\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_a18013e200cb2d9c0bd99a3d67160955.setIcon(div_icon_70a385de22baed8cbe28eb752f8c0ea6);
+        
+    
+        var popup_c319ef89fe4afcd1079558487dd21b9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68be8e2e9ea91093ae0b1b5b1330f205 = $(`<div id="html_68be8e2e9ea91093ae0b1b5b1330f205" style="width: 100.0%; height: 100.0%;">Stop 14: 6299 South St, Halifax, NS B3H 4R2</div>`)[0];
+                popup_c319ef89fe4afcd1079558487dd21b9e.setContent(html_68be8e2e9ea91093ae0b1b5b1330f205);
+            
+        
+
+        marker_a18013e200cb2d9c0bd99a3d67160955.bindPopup(popup_c319ef89fe4afcd1079558487dd21b9e)
+        ;
+
+        
+    
+    
+            var marker_fda2c25295be8b7b47bf8ed01b72a199 = L.marker(
+                [44.636801, -63.6202272],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_18cda791575768671e31e3de9afc1ab6 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e15\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_fda2c25295be8b7b47bf8ed01b72a199.setIcon(div_icon_18cda791575768671e31e3de9afc1ab6);
+        
+    
+        var popup_d90fd1a978ab1139db9319f2dfe6ea0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7810f1b0b86bf6a24df3e575ec77e76 = $(`<div id="html_b7810f1b0b86bf6a24df3e575ec77e76" style="width: 100.0%; height: 100.0%;">Stop 15: 1065 Purcells Cove Rd, Halifax, NS B3N 1R2</div>`)[0];
+                popup_d90fd1a978ab1139db9319f2dfe6ea0d.setContent(html_b7810f1b0b86bf6a24df3e575ec77e76);
+            
+        
+
+        marker_fda2c25295be8b7b47bf8ed01b72a199.bindPopup(popup_d90fd1a978ab1139db9319f2dfe6ea0d)
+        ;
+
+        
+    
+    
+            var marker_21285e997ca4f56e4fea1eae9a24aa58 = L.marker(
+                [44.6493029, -63.618185],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_e406560984291401741325c301a5a750 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e16\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_21285e997ca4f56e4fea1eae9a24aa58.setIcon(div_icon_e406560984291401741325c301a5a750);
+        
+    
+        var popup_0c49ed206f8ca98c9ffa4c4a6c329068 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc347a6fc61fcd960666c518a48d4936 = $(`<div id="html_cc347a6fc61fcd960666c518a48d4936" style="width: 100.0%; height: 100.0%;">Stop 16: 7001 Mumford Rd, Halifax, NS B3L 4R3</div>`)[0];
+                popup_0c49ed206f8ca98c9ffa4c4a6c329068.setContent(html_cc347a6fc61fcd960666c518a48d4936);
+            
+        
+
+        marker_21285e997ca4f56e4fea1eae9a24aa58.bindPopup(popup_0c49ed206f8ca98c9ffa4c4a6c329068)
+        ;
+
+        
+    
+    
+            var marker_9912f9da9ab0911288ec6db1840310a3 = L.marker(
+                [44.6470137, -63.62345759999999],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_b8401368c02bcbd5dc793db24d492fb3 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e17\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_9912f9da9ab0911288ec6db1840310a3.setIcon(div_icon_b8401368c02bcbd5dc793db24d492fb3);
+        
+    
+        var popup_2042931265f62b45e094d70f019d81f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a31f298e23a802c5f489d927409365c9 = $(`<div id="html_a31f298e23a802c5f489d927409365c9" style="width: 100.0%; height: 100.0%;">Stop 17: 3003 Olivet St, Halifax, NS B3L 4A1</div>`)[0];
+                popup_2042931265f62b45e094d70f019d81f7.setContent(html_a31f298e23a802c5f489d927409365c9);
+            
+        
+
+        marker_9912f9da9ab0911288ec6db1840310a3.bindPopup(popup_2042931265f62b45e094d70f019d81f7)
+        ;
+
+        
+    
+    
+            var marker_c4851688737b76d36b160c3a9c88ea4e = L.marker(
+                [44.6436038, -63.66613539999999],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_1aa2a59ded2e21570d64c092bb939269 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e18\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_c4851688737b76d36b160c3a9c88ea4e.setIcon(div_icon_1aa2a59ded2e21570d64c092bb939269);
+        
+    
+        var popup_1d63766ca23ae780d082633c395d2b22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb8142da963ac47f79805ef88fbaa576 = $(`<div id="html_eb8142da963ac47f79805ef88fbaa576" style="width: 100.0%; height: 100.0%;">Stop 18: 155 Chain Lake Dr, Halifax, NS B3S 1B3</div>`)[0];
+                popup_1d63766ca23ae780d082633c395d2b22.setContent(html_eb8142da963ac47f79805ef88fbaa576);
+            
+        
+
+        marker_c4851688737b76d36b160c3a9c88ea4e.bindPopup(popup_1d63766ca23ae780d082633c395d2b22)
+        ;
+
+        
+    
+    
+            var marker_1c2dec026c575dc39a728d38eb577c8f = L.marker(
+                [44.6595869, -63.6642811],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_cf76d75f3e24ac62efd966266797985c = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e19\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_1c2dec026c575dc39a728d38eb577c8f.setIcon(div_icon_cf76d75f3e24ac62efd966266797985c);
+        
+    
+        var popup_6411520d98585493c3e4fb5cb8cbd68a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd07ae4f97488edd16dacdb2b6532f13 = $(`<div id="html_fd07ae4f97488edd16dacdb2b6532f13" style="width: 100.0%; height: 100.0%;">Stop 19: 26 Thomas Raddall Dr, Halifax, NS B3S 0E2</div>`)[0];
+                popup_6411520d98585493c3e4fb5cb8cbd68a.setContent(html_fd07ae4f97488edd16dacdb2b6532f13);
+            
+        
+
+        marker_1c2dec026c575dc39a728d38eb577c8f.bindPopup(popup_6411520d98585493c3e4fb5cb8cbd68a)
+        ;
+
+        
+    
+    
+            var marker_9c126c267a7704823710300adeb93cc2 = L.marker(
+                [44.6604862, -63.6531593],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_35e348646be023af7ffb047eb2a119b7 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e20\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_9c126c267a7704823710300adeb93cc2.setIcon(div_icon_35e348646be023af7ffb047eb2a119b7);
+        
+    
+        var popup_2a14f8980c1df17244640ca56f14025f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9761597756794cd537d99131411114f3 = $(`<div id="html_9761597756794cd537d99131411114f3" style="width: 100.0%; height: 100.0%;">Stop 20: 127 Harlington Crescent, Halifax, NS B3M 3M9 </div>`)[0];
+                popup_2a14f8980c1df17244640ca56f14025f.setContent(html_9761597756794cd537d99131411114f3);
+            
+        
+
+        marker_9c126c267a7704823710300adeb93cc2.bindPopup(popup_2a14f8980c1df17244640ca56f14025f)
+        ;
+
+        
+    
+    
+            var marker_f77e2f7fc84a8031541e288fa56e2a9a = L.marker(
+                [44.6768502, -63.64935260000001],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_427962f95bcca89136476a9731f19444 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e21\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_f77e2f7fc84a8031541e288fa56e2a9a.setIcon(div_icon_427962f95bcca89136476a9731f19444);
+        
+    
+        var popup_4c28b6b9d655fd0103ddce79c1d10862 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_263e9ab78dfee64f2a8874b5cc903bc5 = $(`<div id="html_263e9ab78dfee64f2a8874b5cc903bc5" style="width: 100.0%; height: 100.0%;">Stop 21: 246 Bedford Hwy, Halifax, NS B3M 2J6</div>`)[0];
+                popup_4c28b6b9d655fd0103ddce79c1d10862.setContent(html_263e9ab78dfee64f2a8874b5cc903bc5);
+            
+        
+
+        marker_f77e2f7fc84a8031541e288fa56e2a9a.bindPopup(popup_4c28b6b9d655fd0103ddce79c1d10862)
+        ;
+
+        
+    
+    
+            var marker_ee7331f452852208f9d300f9ae0f0822 = L.marker(
+                [44.6720401, -63.6450076],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_11f3c35c5432abbe852a84e6c46681ae = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e22\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_ee7331f452852208f9d300f9ae0f0822.setIcon(div_icon_11f3c35c5432abbe852a84e6c46681ae);
+        
+    
+        var popup_0b2b002a940baa2f8f8477615368d807 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec50a4415f31e16654ced2ef1e9a0edb = $(`<div id="html_ec50a4415f31e16654ced2ef1e9a0edb" style="width: 100.0%; height: 100.0%;">Stop 22: 166 Bedford Hwy, Halifax, NS B3M 2J6</div>`)[0];
+                popup_0b2b002a940baa2f8f8477615368d807.setContent(html_ec50a4415f31e16654ced2ef1e9a0edb);
+            
+        
+
+        marker_ee7331f452852208f9d300f9ae0f0822.bindPopup(popup_0b2b002a940baa2f8f8477615368d807)
+        ;
+
+        
+    
+    
+            var marker_c7971f3d02e4a31665605a81fab9941c = L.marker(
+                [44.7015902, -63.6094661],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_aa228118b0dbcae1df89987376c0460e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e23\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_c7971f3d02e4a31665605a81fab9941c.setIcon(div_icon_aa228118b0dbcae1df89987376c0460e);
+        
+    
+        var popup_a5f50a546ddd7b40bcbb53b26d05d549 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcd59767828a910e62acee293e685c8d = $(`<div id="html_fcd59767828a910e62acee293e685c8d" style="width: 100.0%; height: 100.0%;">Stop 23: 697 Windmill Rd, Dartmouth, NS B3B 1B7</div>`)[0];
+                popup_a5f50a546ddd7b40bcbb53b26d05d549.setContent(html_fcd59767828a910e62acee293e685c8d);
+            
+        
+
+        marker_c7971f3d02e4a31665605a81fab9941c.bindPopup(popup_a5f50a546ddd7b40bcbb53b26d05d549)
+        ;
+
+        
+    
+    
+            var marker_3fd8ee3635ef29f9828534d6d4825d75 = L.marker(
+                [44.6823226, -63.58131779999999],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_3c97858c24624ef816d0a760d967e92a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e24\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_3fd8ee3635ef29f9828534d6d4825d75.setIcon(div_icon_3c97858c24624ef816d0a760d967e92a);
+        
+    
+        var popup_a466d0dc62c6012c32452763016c4f3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d712decb929f26dc79d66f73e5401d3 = $(`<div id="html_3d712decb929f26dc79d66f73e5401d3" style="width: 100.0%; height: 100.0%;">Stop 24: 149 Albro Lake Rd, Dartmouth, NS B3A 3Y8</div>`)[0];
+                popup_a466d0dc62c6012c32452763016c4f3d.setContent(html_3d712decb929f26dc79d66f73e5401d3);
+            
+        
+
+        marker_3fd8ee3635ef29f9828534d6d4825d75.bindPopup(popup_a466d0dc62c6012c32452763016c4f3d)
+        ;
+
+        
+    
+    
+            var marker_aa57160028bdc158d4a1736a544bf26d = L.marker(
+                [44.68634549999999, -63.5594474],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_dd0caee5131fbbfd569777683f6a0739 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e25\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_aa57160028bdc158d4a1736a544bf26d.setIcon(div_icon_dd0caee5131fbbfd569777683f6a0739);
+        
+    
+        var popup_a36cc8fcb85c93c501e4ffc2028de6a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58ebaebe20fb8e7782a729b94586ff34 = $(`<div id="html_58ebaebe20fb8e7782a729b94586ff34" style="width: 100.0%; height: 100.0%;">Stop 25: 21 Micmac Blvd, Dartmouth, NS B3A 4N3</div>`)[0];
+                popup_a36cc8fcb85c93c501e4ffc2028de6a6.setContent(html_58ebaebe20fb8e7782a729b94586ff34);
+            
+        
+
+        marker_aa57160028bdc158d4a1736a544bf26d.bindPopup(popup_a36cc8fcb85c93c501e4ffc2028de6a6)
+        ;
+
+        
+    
+    
+            var marker_99adf0e308d1f8e01bab1e80e3011515 = L.marker(
+                [44.6695601, -63.5754649],
+                {}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var div_icon_6fadbb938587da57d544d36be364dc45 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003e26\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
+            marker_99adf0e308d1f8e01bab1e80e3011515.setIcon(div_icon_6fadbb938587da57d544d36be364dc45);
+        
+    
+        var popup_10ae0a337976600798b118b093d0d5ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b4c500b2a4a04c49a01886ab543b76e = $(`<div id="html_2b4c500b2a4a04c49a01886ab543b76e" style="width: 100.0%; height: 100.0%;">Stop 26: 110 Wyse Rd, Dartmouth, NS B3A 1M2</div>`)[0];
+                popup_10ae0a337976600798b118b093d0d5ef.setContent(html_2b4c500b2a4a04c49a01886ab543b76e);
+            
+        
+
+        marker_99adf0e308d1f8e01bab1e80e3011515.bindPopup(popup_10ae0a337976600798b118b093d0d5ef)
+        ;
+
+        
+    
+    
+            var poly_line_8227b466ac4bb15abae4817f6f1bb3a1 = L.polyline(
+                [[44.6542, -63.596900000000005], [44.65384, -63.59638], [44.653780000000005, -63.59629], [44.65372000000001, -63.5962], [44.65372000000001, -63.5962], [44.65334000000001, -63.59675000000001], [44.65298000000001, -63.597280000000005], [44.65298000000001, -63.597280000000005], [44.653150000000004, -63.59754], [44.65323, -63.597660000000005], [44.653290000000005, -63.59776000000001], [44.65337, -63.59789000000001], [44.6535, -63.598090000000006], [44.653620000000004, -63.59828], [44.653670000000005, -63.59837], [44.65373, -63.59845000000001], [44.65391, -63.59874000000001], [44.65401000000001, -63.59897000000001], [44.65404, -63.59901000000001], [44.65455, -63.599790000000006], [44.6548, -63.600190000000005], [44.654810000000005, -63.600210000000004], [44.65505, -63.60056000000001], [44.655060000000006, -63.60058000000001], [44.65543, -63.60114000000001], [44.65543, -63.60114000000001], [44.655530000000006, -63.601000000000006], [44.655660000000005, -63.600820000000006], [44.65576, -63.6007], [44.6559, -63.60052], [44.655930000000005, -63.60049000000001], [44.656110000000005, -63.60027], [44.65635, -63.599990000000005], [44.65648, -63.599830000000004]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_d36d386a99c9c5939311893784e5d9ec = L.polyline(
+                [[44.65648, -63.599830000000004], [44.656740000000006, -63.599520000000005], [44.65686, -63.599380000000004], [44.657160000000005, -63.599000000000004], [44.65735, -63.598780000000005], [44.65735, -63.598780000000005], [44.657720000000005, -63.599410000000006], [44.657810000000005, -63.599540000000005], [44.657880000000006, -63.599630000000005], [44.6582, -63.60013000000001], [44.65829, -63.60027], [44.658590000000004, -63.60071000000001], [44.65876, -63.60098000000001], [44.658910000000006, -63.601200000000006], [44.65928, -63.601760000000006], [44.659380000000006, -63.601910000000004], [44.659380000000006, -63.60192000000001], [44.659470000000006, -63.60204], [44.659670000000006, -63.602340000000005], [44.660180000000004, -63.60311000000001], [44.66055, -63.603660000000005], [44.66069, -63.60387000000001], [44.66075, -63.603950000000005], [44.66076, -63.603970000000004], [44.660810000000005, -63.604040000000005], [44.66087, -63.60414000000001], [44.660920000000004, -63.604220000000005], [44.660920000000004, -63.604220000000005], [44.660990000000005, -63.604240000000004], [44.661030000000004, -63.60427000000001], [44.66109, -63.60434000000001], [44.661390000000004, -63.60394000000001], [44.661620000000006, -63.60363], [44.661970000000004, -63.603190000000005], [44.66208, -63.60305], [44.662470000000006, -63.602540000000005], [44.66301000000001, -63.60184], [44.66301000000001, -63.60184], [44.66310000000001, -63.601980000000005], [44.66328, -63.60229], [44.66348000000001, -63.60257000000001], [44.663560000000004, -63.602700000000006], [44.66371, -63.60304000000001], [44.66376, -63.603120000000004]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_41eab109c576e109f3442265134c4dea = L.polyline(
+                [[44.66376, -63.603120000000004], [44.66393, -63.60338000000001], [44.66393, -63.60338000000001], [44.664010000000005, -63.603260000000006], [44.66434, -63.602830000000004], [44.66487, -63.602140000000006], [44.66487, -63.602140000000006], [44.664970000000004, -63.602270000000004], [44.665110000000006, -63.602500000000006], [44.66528, -63.6028], [44.665420000000005, -63.60302000000001], [44.665600000000005, -63.603300000000004], [44.665780000000005, -63.603590000000004], [44.66593, -63.603840000000005], [44.6661, -63.604130000000005], [44.666320000000006, -63.60446], [44.66644, -63.60468], [44.66662, -63.60499000000001], [44.66682, -63.60531], [44.666970000000006, -63.605520000000006], [44.667170000000006, -63.60582000000001], [44.667320000000004, -63.606030000000004], [44.66742000000001, -63.60620000000001], [44.66752, -63.60609], [44.66767, -63.60634], [44.667730000000006, -63.60653000000001], [44.66818000000001, -63.60719], [44.668490000000006, -63.607620000000004], [44.66874000000001, -63.60797], [44.6691, -63.608470000000004], [44.669360000000005, -63.60886000000001], [44.669360000000005, -63.60886000000001], [44.669230000000006, -63.60904000000001], [44.66915, -63.609140000000004], [44.66883000000001, -63.60956], [44.66883000000001, -63.60956], [44.669070000000005, -63.609930000000006], [44.66912000000001, -63.61000000000001]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_7629c68062b1d9a25c3cb065ddf4fe8f = L.polyline(
+                [[44.66912000000001, -63.61000000000001], [44.669070000000005, -63.609930000000006], [44.66883000000001, -63.60956], [44.66883000000001, -63.60956], [44.66915, -63.609140000000004], [44.669230000000006, -63.60904000000001], [44.669360000000005, -63.60886000000001], [44.669360000000005, -63.60886000000001], [44.6691, -63.608470000000004], [44.66874000000001, -63.60797], [44.668490000000006, -63.607620000000004], [44.66818000000001, -63.60719], [44.667730000000006, -63.60653000000001], [44.66762000000001, -63.60647000000001], [44.66756, -63.60640000000001], [44.667480000000005, -63.606300000000005], [44.66742000000001, -63.60620000000001], [44.66742000000001, -63.60620000000001], [44.667390000000005, -63.60602000000001], [44.66738, -63.60593000000001], [44.66738, -63.60589], [44.66734, -63.60492000000001], [44.667320000000004, -63.604690000000005], [44.667280000000005, -63.603790000000004], [44.66727, -63.603500000000004], [44.66727, -63.60338000000001], [44.66727, -63.60338000000001], [44.667260000000006, -63.603190000000005], [44.667260000000006, -63.60313000000001], [44.667260000000006, -63.603010000000005], [44.66727, -63.60284000000001], [44.66727, -63.60277000000001], [44.667280000000005, -63.60271], [44.66729, -63.60255000000001], [44.66731, -63.6024], [44.66733000000001, -63.60222], [44.667370000000005, -63.602000000000004], [44.667460000000005, -63.60148], [44.667460000000005, -63.60146], [44.667480000000005, -63.60134000000001], [44.667480000000005, -63.60125000000001], [44.66749, -63.60116000000001], [44.667480000000005, -63.60107000000001], [44.667480000000005, -63.60099], [44.667480000000005, -63.60098000000001], [44.66747, -63.600910000000006], [44.667460000000005, -63.600840000000005], [44.667440000000006, -63.600770000000004], [44.66742000000001, -63.6007], [44.667390000000005, -63.60063], [44.66736, -63.600570000000005], [44.66731, -63.600480000000005], [44.66725, -63.600390000000004], [44.667, -63.60002000000001], [44.666880000000006, -63.599830000000004], [44.66664, -63.599520000000005], [44.66648000000001, -63.599320000000006], [44.66639000000001, -63.59921000000001], [44.665820000000004, -63.59850000000001], [44.665760000000006, -63.598420000000004], [44.66572, -63.59836000000001], [44.665690000000005, -63.598310000000005], [44.66565000000001, -63.59825000000001], [44.66559, -63.59814000000001], [44.66554000000001, -63.59803000000001], [44.66541, -63.59776000000001], [44.665220000000005, -63.59733000000001], [44.664970000000004, -63.59677000000001], [44.66442000000001, -63.59557], [44.664300000000004, -63.5953], [44.66424000000001, -63.595150000000004], [44.66424000000001, -63.59514000000001], [44.664190000000005, -63.595000000000006], [44.66413, -63.594820000000006], [44.664100000000005, -63.594710000000006], [44.66404000000001, -63.59441], [44.66396, -63.594080000000005], [44.66391, -63.59385], [44.66387, -63.59369], [44.663810000000005, -63.59349], [44.66375, -63.593250000000005], [44.66375, -63.593250000000005], [44.66355, -63.592980000000004], [44.66295, -63.592270000000006], [44.662870000000005, -63.592180000000006], [44.66272, -63.59201], [44.66261, -63.59187000000001], [44.66254000000001, -63.59179], [44.66246, -63.5917], [44.662400000000005, -63.591640000000005], [44.662330000000004, -63.591570000000004], [44.66207000000001, -63.591330000000006], [44.662060000000004, -63.59132], [44.66181, -63.59109000000001], [44.66127, -63.59058], [44.66084, -63.59017000000001], [44.66044, -63.589800000000004], [44.660120000000006, -63.589510000000004], [44.66004, -63.58944], [44.65997, -63.589360000000006], [44.65992000000001, -63.58930000000001], [44.6599, -63.58928], [44.65984, -63.589200000000005], [44.659510000000004, -63.588800000000006], [44.6595, -63.58878000000001], [44.659440000000004, -63.588710000000006], [44.65943, -63.588710000000006], [44.65943, -63.5887], [44.659400000000005, -63.58865000000001], [44.65939, -63.58865000000001], [44.659380000000006, -63.588640000000005], [44.65937, -63.588620000000006], [44.65937, -63.58861], [44.65934, -63.58858000000001], [44.659330000000004, -63.588570000000004], [44.65932, -63.588550000000005], [44.659310000000005, -63.588550000000005], [44.65927000000001, -63.58849000000001], [44.6591, -63.58831000000001], [44.65898000000001, -63.58814], [44.65894, -63.58809000000001], [44.65894, -63.588080000000005], [44.658930000000005, -63.588080000000005], [44.65889000000001, -63.588010000000004], [44.658770000000004, -63.587830000000004], [44.658480000000004, -63.587430000000005], [44.658460000000005, -63.5874], [44.65842000000001, -63.587340000000005], [44.65838, -63.58729], [44.65809, -63.58688000000001], [44.657720000000005, -63.58634000000001], [44.657720000000005, -63.58634000000001], [44.65769, -63.58639000000001], [44.657590000000006, -63.58653], [44.65757000000001, -63.58657], [44.65751, -63.58666], [44.6574, -63.58682], [44.6572, -63.58713], [44.65708, -63.58731], [44.65695, -63.58749], [44.65695, -63.58749], [44.65672000000001, -63.58717000000001], [44.65644, -63.586760000000005], [44.656200000000005, -63.586420000000004], [44.656020000000005, -63.58614000000001], [44.65563, -63.585550000000005], [44.65563, -63.585550000000005], [44.65583, -63.58527000000001], [44.65601, -63.58498000000001]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_6a392ca8cbfa02019f5ceb20fb167521 = L.polyline(
+                [[44.65601, -63.58498000000001], [44.65583, -63.58527000000001], [44.65563, -63.585550000000005], [44.65563, -63.585550000000005], [44.65560000000001, -63.585510000000006], [44.655330000000006, -63.58512], [44.65511, -63.584790000000005], [44.655100000000004, -63.58476], [44.65505, -63.58469], [44.65484000000001, -63.58438], [44.654700000000005, -63.58417000000001], [44.654430000000005, -63.58381000000001], [44.65401000000001, -63.583200000000005], [44.653740000000006, -63.582800000000006], [44.65344, -63.58238000000001], [44.65334000000001, -63.58222000000001], [44.653130000000004, -63.581920000000004], [44.65263, -63.58118], [44.652460000000005, -63.58093], [44.652260000000005, -63.580630000000006], [44.652080000000005, -63.58035], [44.65203, -63.58028], [44.65148000000001, -63.579510000000006], [44.65146, -63.579480000000004], [44.65138, -63.579370000000004], [44.65137000000001, -63.579370000000004], [44.65129, -63.57927000000001], [44.651230000000005, -63.57921], [44.651210000000006, -63.57918000000001], [44.651140000000005, -63.579100000000004], [44.651050000000005, -63.57903], [44.651050000000005, -63.57903], [44.65097, -63.578970000000005], [44.65106, -63.57883], [44.651210000000006, -63.57828000000001], [44.651210000000006, -63.57828000000001], [44.65090000000001, -63.57811], [44.65026, -63.577780000000004], [44.65006, -63.57768000000001], [44.649980000000006, -63.57764]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_e15a8d29ba84996fae23762d152a68aa = L.polyline(
+                [[44.649980000000006, -63.57764], [44.649910000000006, -63.57761000000001]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_2518e9767abd4bb871dbfd9a3361cb1c = L.polyline(
+                [[44.649910000000006, -63.57761000000001], [44.649750000000004, -63.57753], [44.64954, -63.57743000000001], [44.649530000000006, -63.57743000000001], [44.64941, -63.577380000000005], [44.64907, -63.57721000000001], [44.648900000000005, -63.577130000000004], [44.64873, -63.57705000000001], [44.64873, -63.57705000000001], [44.64885, -63.576570000000004], [44.64903, -63.57578], [44.64912, -63.57547], [44.64922000000001, -63.57506000000001], [44.649300000000004, -63.574690000000004], [44.64936, -63.574450000000006], [44.64949, -63.57394000000001], [44.64952, -63.57381], [44.64952, -63.57381], [44.64936, -63.573710000000005], [44.649190000000004, -63.573620000000005], [44.64904000000001, -63.57354000000001], [44.64856, -63.57329000000001], [44.64818, -63.57311000000001], [44.64802, -63.57303], [44.64757, -63.572810000000004], [44.64683, -63.57245], [44.64658, -63.57233000000001], [44.64627, -63.57217000000001], [44.646240000000006, -63.57215000000001], [44.64623, -63.57215000000001]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_0ea2e85af6a006c0aea7c7a694bd7fcd = L.polyline(
+                [[44.646150000000006, -63.57211], [44.64607, -63.57206000000001], [44.64591, -63.57198], [44.645900000000005, -63.57198], [44.64562, -63.571830000000006], [44.64544, -63.57173], [44.64504, -63.57153], [44.64504, -63.57153], [44.64488, -63.57215000000001], [44.644760000000005, -63.57253000000001], [44.644690000000004, -63.57276], [44.644690000000004, -63.57276], [44.644180000000006, -63.57253000000001], [44.644180000000006, -63.57253000000001], [44.64415, -63.57264000000001], [44.6441, -63.572860000000006], [44.64403, -63.57312], [44.64394, -63.57352], [44.64385, -63.573890000000006], [44.6437, -63.57443000000001], [44.64359, -63.574830000000006], [44.64358000000001, -63.57488000000001], [44.643530000000005, -63.575100000000006], [44.64332, -63.575990000000004], [44.64307, -63.57694000000001], [44.64282, -63.57790000000001], [44.642770000000006, -63.57809], [44.642680000000006, -63.5784]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_4a1c010eb1cb9d73d336c4af6e38e5af = L.polyline(
+                [[44.642680000000006, -63.5784], [44.642590000000006, -63.57874], [44.642450000000004, -63.579260000000005], [44.64231, -63.579750000000004], [44.64231, -63.579750000000004], [44.642030000000005, -63.57961], [44.64106, -63.579150000000006], [44.640750000000004, -63.578990000000005], [44.64074, -63.578990000000005], [44.64074, -63.578990000000005], [44.64078000000001, -63.578770000000006], [44.64077, -63.57867], [44.640750000000004, -63.578630000000004], [44.6407, -63.578570000000006], [44.64056, -63.57849]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_5d61678b7a6bb2af7833da34daa32ab9 = L.polyline(
+                [[44.64056, -63.57849], [44.6407, -63.578570000000006], [44.640750000000004, -63.578630000000004], [44.64077, -63.57867], [44.64078000000001, -63.578770000000006], [44.64074, -63.578990000000005], [44.64074, -63.578990000000005], [44.64038, -63.57882000000001], [44.64027, -63.57876], [44.64009, -63.578680000000006], [44.639950000000006, -63.57860000000001], [44.639880000000005, -63.57856], [44.63958, -63.5784], [44.63928000000001, -63.57824000000001], [44.63924, -63.57822], [44.639140000000005, -63.57817000000001], [44.638980000000004, -63.57809], [44.63890000000001, -63.578050000000005], [44.63857, -63.57790000000001], [44.63823000000001, -63.577760000000005], [44.638160000000006, -63.577740000000006], [44.638000000000005, -63.577670000000005], [44.63778000000001, -63.57757000000001], [44.637550000000005, -63.57746], [44.637240000000006, -63.57732000000001], [44.637150000000005, -63.577290000000005], [44.637150000000005, -63.577290000000005], [44.63747, -63.575770000000006], [44.63752, -63.57553000000001], [44.637530000000005, -63.57549], [44.637530000000005, -63.57549], [44.637660000000004, -63.57555000000001], [44.637950000000004, -63.57569000000001], [44.63817, -63.57580000000001]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_c20e052ecee09a81f388c0cba32c252f = L.polyline(
+                [[44.63817, -63.57580000000001], [44.637950000000004, -63.57569000000001], [44.637660000000004, -63.57555000000001], [44.637530000000005, -63.57549], [44.637530000000005, -63.57549], [44.63752, -63.57553000000001], [44.63747, -63.575770000000006], [44.63747, -63.575770000000006], [44.63665, -63.57536], [44.63662, -63.57535000000001], [44.63622, -63.57515000000001], [44.63622, -63.57515000000001], [44.63582, -63.57667000000001], [44.63582, -63.57667000000001], [44.6351, -63.5763], [44.63492, -63.57621], [44.63474, -63.57611000000001], [44.63449000000001, -63.575970000000005], [44.63449000000001, -63.575970000000005], [44.634370000000004, -63.575990000000004], [44.63405, -63.57582000000001], [44.63244, -63.57495000000001], [44.631820000000005, -63.57462], [44.63116, -63.57424], [44.63083, -63.57406], [44.62991, -63.573550000000004], [44.62942, -63.573280000000004], [44.62942, -63.57327000000001], [44.62892, -63.572990000000004], [44.628780000000006, -63.57292], [44.62876000000001, -63.572900000000004], [44.62857, -63.57280000000001], [44.6285, -63.57276], [44.62834, -63.57267], [44.628190000000004, -63.57260000000001], [44.62796, -63.57246000000001], [44.62796, -63.57246000000001], [44.62798, -63.57237000000001], [44.62823, -63.571470000000005], [44.6283, -63.57124], [44.628370000000004, -63.571000000000005], [44.628370000000004, -63.571000000000005], [44.6285, -63.571070000000006], [44.62879, -63.571220000000004], [44.62883, -63.57124], [44.62885000000001, -63.571270000000005], [44.62886, -63.57132000000001], [44.628870000000006, -63.571380000000005], [44.628870000000006, -63.57142], [44.62886, -63.57146], [44.628780000000006, -63.57173], [44.62877, -63.57177000000001], [44.62877, -63.57179000000001], [44.62877, -63.57182], [44.62877, -63.57184], [44.628780000000006, -63.57186000000001], [44.628800000000005, -63.57188000000001], [44.628960000000006, -63.57198], [44.62901, -63.572010000000006], [44.629020000000004, -63.57202], [44.629020000000004, -63.57202], [44.62915, -63.571490000000004], [44.629160000000006, -63.571380000000005], [44.62913, -63.571290000000005]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_9388f8a91bf8629c6735846d8562dd4b = L.polyline(
+                [[44.62913, -63.571290000000005], [44.629160000000006, -63.571380000000005], [44.62915, -63.571490000000004], [44.629020000000004, -63.57202], [44.629020000000004, -63.57202], [44.62906, -63.57204000000001], [44.629070000000006, -63.572070000000004], [44.62908, -63.57211], [44.629090000000005, -63.572140000000005], [44.629090000000005, -63.57218], [44.629090000000005, -63.57222000000001], [44.629090000000005, -63.572230000000005], [44.62908, -63.57229], [44.62906, -63.57238], [44.628960000000006, -63.572880000000005], [44.628960000000006, -63.572880000000005], [44.629110000000004, -63.572970000000005], [44.629490000000004, -63.573190000000004], [44.629940000000005, -63.573440000000005], [44.63107, -63.574070000000006], [44.631190000000004, -63.57414000000001], [44.63185000000001, -63.57450000000001], [44.632470000000005, -63.57484], [44.634080000000004, -63.57571000000001], [44.63440000000001, -63.57587], [44.63440000000001, -63.57587], [44.634370000000004, -63.575990000000004], [44.634130000000006, -63.57685000000001], [44.633970000000005, -63.577630000000006], [44.633900000000004, -63.578030000000005], [44.633810000000004, -63.578410000000005], [44.633680000000005, -63.578990000000005], [44.633480000000006, -63.57977], [44.63345, -63.57987000000001], [44.63327, -63.580540000000006], [44.63326000000001, -63.58055], [44.63317000000001, -63.58088000000001], [44.63309, -63.58126000000001], [44.63298, -63.58175000000001], [44.632960000000004, -63.58187], [44.63291, -63.582100000000004], [44.6328, -63.58252], [44.63264, -63.58316000000001], [44.63264, -63.58316000000001], [44.632600000000004, -63.58330000000001], [44.63197, -63.583020000000005], [44.63174, -63.582930000000005], [44.63105, -63.58263], [44.63062, -63.58245000000001], [44.63062, -63.58245000000001], [44.63065, -63.582330000000006], [44.63067, -63.58220000000001], [44.63069, -63.582080000000005], [44.630700000000004, -63.58202000000001], [44.63071, -63.581920000000004], [44.63074, -63.581810000000004], [44.63082000000001, -63.58142000000001], [44.630840000000006, -63.581320000000005], [44.63085, -63.58129], [44.630860000000006, -63.581230000000005], [44.63087, -63.5812], [44.630880000000005, -63.581160000000004], [44.63092, -63.581100000000006], [44.63092, -63.581100000000006], [44.630970000000005, -63.581140000000005], [44.63098, -63.58115000000001], [44.63107, -63.581210000000006], [44.63109, -63.58122], [44.6311, -63.58122], [44.63112, -63.581210000000006], [44.631130000000006, -63.5812], [44.631150000000005, -63.58119000000001]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_1fbcdafca49fa5d8b071f1075ecd2eda = L.polyline(
+                [[44.631150000000005, -63.58119000000001], [44.631130000000006, -63.5812], [44.63112, -63.581210000000006], [44.6311, -63.58122], [44.63109, -63.58122], [44.63107, -63.581210000000006], [44.63098, -63.58115000000001], [44.630970000000005, -63.581140000000005], [44.63092, -63.581100000000006], [44.63092, -63.581100000000006], [44.630880000000005, -63.581160000000004], [44.63087, -63.5812], [44.630860000000006, -63.581230000000005], [44.63085, -63.58129], [44.630840000000006, -63.581320000000005], [44.63082000000001, -63.58142000000001], [44.63074, -63.581810000000004], [44.63071, -63.581920000000004], [44.630700000000004, -63.58202000000001], [44.63069, -63.582080000000005], [44.63067, -63.58220000000001], [44.63065, -63.582330000000006], [44.63065, -63.582330000000006], [44.630990000000004, -63.582480000000004], [44.631310000000006, -63.582620000000006], [44.631710000000005, -63.58279], [44.631730000000005, -63.582800000000006], [44.631890000000006, -63.58287000000001], [44.632250000000006, -63.583020000000005], [44.63264, -63.58316000000001], [44.63318, -63.583360000000006], [44.633300000000006, -63.583400000000005], [44.633700000000005, -63.583560000000006], [44.63387, -63.58363000000001], [44.63439, -63.58384], [44.6347, -63.583960000000005], [44.6349, -63.584050000000005], [44.634930000000004, -63.584070000000004], [44.63508, -63.584140000000005], [44.63561000000001, -63.58438], [44.63609, -63.584610000000005], [44.636160000000004, -63.58465], [44.63653, -63.58482000000001], [44.63653, -63.58482000000001], [44.636500000000005, -63.584950000000006], [44.6364, -63.58540000000001], [44.636390000000006, -63.58543], [44.63629, -63.58579], [44.636280000000006, -63.58585000000001], [44.63622, -63.58607000000001], [44.63618, -63.586220000000004], [44.636, -63.587030000000006], [44.63590000000001, -63.58747], [44.635780000000004, -63.58804000000001], [44.63570000000001, -63.58841], [44.63570000000001, -63.58843], [44.635650000000005, -63.58865000000001], [44.63553, -63.589220000000005], [44.63541, -63.589710000000004], [44.635400000000004, -63.589780000000005], [44.6353, -63.590210000000006], [44.635270000000006, -63.590360000000004], [44.635270000000006, -63.590360000000004], [44.63537, -63.590410000000006], [44.635450000000006, -63.590430000000005], [44.63546, -63.590430000000005], [44.635510000000004, -63.590450000000004], [44.63552000000001, -63.590450000000004], [44.63562, -63.59049], [44.635670000000005, -63.59051], [44.63590000000001, -63.590610000000005], [44.63595, -63.59066000000001], [44.636, -63.59069], [44.636030000000005, -63.59071000000001], [44.63604, -63.590720000000005], [44.636050000000004, -63.590740000000004], [44.63606, -63.59075000000001], [44.636070000000004, -63.59078], [44.63609, -63.590810000000005], [44.636120000000005, -63.590860000000006], [44.63615, -63.59093000000001], [44.63615, -63.59094], [44.636160000000004, -63.590970000000006], [44.63617000000001, -63.590990000000005], [44.636190000000006, -63.59104000000001], [44.636190000000006, -63.59107], [44.636190000000006, -63.591120000000004], [44.63618, -63.591170000000005], [44.63618, -63.59118000000001], [44.636140000000005, -63.591260000000005], [44.63613, -63.591280000000005], [44.63604, -63.591640000000005], [44.63599000000001, -63.59183000000001], [44.63598, -63.59188], [44.63595, -63.592020000000005], [44.635920000000006, -63.592200000000005], [44.63591, -63.59228], [44.63591, -63.59235], [44.63590000000001, -63.59239], [44.63590000000001, -63.59241000000001], [44.63590000000001, -63.59250000000001], [44.63588, -63.59264], [44.63586, -63.592800000000004], [44.635830000000006, -63.59291]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_8f893967c1ecdb4be7e36af5d32d4e20 = L.polyline(
+                [[44.635830000000006, -63.59291], [44.635830000000006, -63.59293], [44.63582, -63.592940000000006], [44.635810000000006, -63.59295], [44.6358, -63.59297000000001], [44.63579000000001, -63.592980000000004], [44.635780000000004, -63.59299000000001], [44.635760000000005, -63.593], [44.63570000000001, -63.593], [44.635670000000005, -63.593], [44.63548, -63.593], [44.63534000000001, -63.593], [44.63528, -63.593], [44.63524, -63.593], [44.635180000000005, -63.59299000000001], [44.635130000000004, -63.592980000000004], [44.63508, -63.592960000000005], [44.63503, -63.592940000000006], [44.634820000000005, -63.592850000000006], [44.63481, -63.592850000000006], [44.634730000000005, -63.59281000000001], [44.634730000000005, -63.59281000000001], [44.63468, -63.59299000000001], [44.63468, -63.59301000000001], [44.63465, -63.593140000000005], [44.6345, -63.59376], [44.63440000000001, -63.594190000000005], [44.634330000000006, -63.594440000000006], [44.63423, -63.59483], [44.63420000000001, -63.59496000000001], [44.634130000000006, -63.595200000000006], [44.634130000000006, -63.595200000000006], [44.634370000000004, -63.5953], [44.634640000000005, -63.595420000000004], [44.634930000000004, -63.59554000000001], [44.634980000000006, -63.59557], [44.6355, -63.59579000000001], [44.63589, -63.595960000000005], [44.636010000000006, -63.59602], [44.636140000000005, -63.59606000000001], [44.63645, -63.59617000000001], [44.636540000000004, -63.59622], [44.6366, -63.596250000000005], [44.63669, -63.59628000000001], [44.636990000000004, -63.5964], [44.63720000000001, -63.59649], [44.637260000000005, -63.59651], [44.63767000000001, -63.59671000000001], [44.638600000000004, -63.59716], [44.639720000000004, -63.597680000000004], [44.640080000000005, -63.597860000000004], [44.64086, -63.598290000000006], [44.64086, -63.598290000000006], [44.64058000000001, -63.59933], [44.64031000000001, -63.600350000000006], [44.64027, -63.600480000000005], [44.6402, -63.600750000000005], [44.64002000000001, -63.60136000000001], [44.64002000000001, -63.60136000000001], [44.64014, -63.60152000000001], [44.640240000000006, -63.60168], [44.64040000000001, -63.60190000000001], [44.640530000000005, -63.60208000000001], [44.640550000000005, -63.602120000000006], [44.640660000000004, -63.60230000000001], [44.64076, -63.602470000000004], [44.64077, -63.602500000000006], [44.640930000000004, -63.602810000000005], [44.641020000000005, -63.602970000000006], [44.641110000000005, -63.603120000000004], [44.641200000000005, -63.60325], [44.64128, -63.60336], [44.64135, -63.603440000000006], [44.641420000000004, -63.603500000000004], [44.641490000000005, -63.60356], [44.641580000000005, -63.60362000000001], [44.641650000000006, -63.603660000000005], [44.64173, -63.60371000000001], [44.642070000000004, -63.60389000000001], [44.64251, -63.604130000000005], [44.64291, -63.604350000000004], [44.642950000000006, -63.604380000000006], [44.64307, -63.60445000000001], [44.64314, -63.60450000000001], [44.643240000000006, -63.604580000000006], [44.643240000000006, -63.604580000000006], [44.643190000000004, -63.604760000000006], [44.643060000000006, -63.6052], [44.64302000000001, -63.605320000000006], [44.64282, -63.605990000000006], [44.64273, -63.606230000000004], [44.64247, -63.607040000000005], [44.642210000000006, -63.607870000000005], [44.64217, -63.60799000000001], [44.642050000000005, -63.608360000000005], [44.64175, -63.609280000000005], [44.6417, -63.60949000000001], [44.641540000000006, -63.60994], [44.6413, -63.61059], [44.64125000000001, -63.61074000000001], [44.64121, -63.61084], [44.64117, -63.610910000000004], [44.641130000000004, -63.61099000000001], [44.6411, -63.61103000000001], [44.64105000000001, -63.61110000000001], [44.64103, -63.61113], [44.64092, -63.61126000000001], [44.64087000000001, -63.611320000000006], [44.64072, -63.61151], [44.640710000000006, -63.611520000000006], [44.64063, -63.611630000000005], [44.64056, -63.611760000000004], [44.64049000000001, -63.611900000000006], [44.640460000000004, -63.61202000000001], [44.64043, -63.61215000000001], [44.64040000000001, -63.61231000000001], [44.640390000000004, -63.61249000000001], [44.640390000000004, -63.612500000000004], [44.64038, -63.61269000000001], [44.64038, -63.613060000000004], [44.640390000000004, -63.613200000000006], [44.64040000000001, -63.613330000000005], [44.640420000000006, -63.61346], [44.64045, -63.613580000000006], [44.640460000000004, -63.613620000000004], [44.640480000000004, -63.613690000000005], [44.64058000000001, -63.61399000000001], [44.64061, -63.61408000000001], [44.641000000000005, -63.615190000000005], [44.641040000000004, -63.615300000000005], [44.641070000000006, -63.61542000000001], [44.6411, -63.61554], [44.64112, -63.615660000000005], [44.64114000000001, -63.615790000000004], [44.64126, -63.61648], [44.641490000000005, -63.6178], [44.641560000000005, -63.61816], [44.641560000000005, -63.61822000000001], [44.641600000000004, -63.61838], [44.641600000000004, -63.618460000000006], [44.641600000000004, -63.618570000000005], [44.641600000000004, -63.618660000000006], [44.64161000000001, -63.618860000000005], [44.64161000000001, -63.61891000000001], [44.641580000000005, -63.61925000000001], [44.641580000000005, -63.61938000000001], [44.64157, -63.61952000000001], [44.64157, -63.61963000000001], [44.64157, -63.619730000000004], [44.64159, -63.61979], [44.64162, -63.61985000000001], [44.641690000000004, -63.61997], [44.641690000000004, -63.61997], [44.6417, -63.61997], [44.64171, -63.61997], [44.64171, -63.619980000000005], [44.64172000000001, -63.619980000000005], [44.64173, -63.619980000000005], [44.641740000000006, -63.61999000000001], [44.64175, -63.61999000000001], [44.64175, -63.620000000000005], [44.64179, -63.620020000000004], [44.64181000000001, -63.62004], [44.64182, -63.62006], [44.641850000000005, -63.62010000000001], [44.64188, -63.620140000000006], [44.64191, -63.620180000000005], [44.64193, -63.62023000000001], [44.641940000000005, -63.62028000000001], [44.64195, -63.620340000000006], [44.64195, -63.62035], [44.64195, -63.620360000000005], [44.64195, -63.62037000000001], [44.641960000000005, -63.620380000000004], [44.641960000000005, -63.62039000000001], [44.641960000000005, -63.620400000000004], [44.64195, -63.62041000000001], [44.64195, -63.62046000000001], [44.64195, -63.620520000000006], [44.641940000000005, -63.62057000000001], [44.641920000000006, -63.62062], [44.64191, -63.620670000000004], [44.64188, -63.620720000000006], [44.64186, -63.620760000000004], [44.641830000000006, -63.62079000000001], [44.641830000000006, -63.6208], [44.64182, -63.6208], [44.64182, -63.620810000000006], [44.64181000000001, -63.620810000000006], [44.64181000000001, -63.62082], [44.6418, -63.62082], [44.64177, -63.62084000000001], [44.641740000000006, -63.62086000000001], [44.6417, -63.620870000000004], [44.641670000000005, -63.620870000000004], [44.641630000000006, -63.62088000000001], [44.641600000000004, -63.620870000000004], [44.641560000000005, -63.620870000000004], [44.64153, -63.62086000000001], [44.6415, -63.62084000000001], [44.641470000000005, -63.62082], [44.64144, -63.6208], [44.641420000000004, -63.62078], [44.641400000000004, -63.62075000000001], [44.641380000000005, -63.620720000000006], [44.641360000000006, -63.62068000000001], [44.64134000000001, -63.620650000000005], [44.64132, -63.62062], [44.64121, -63.620490000000004], [44.641110000000005, -63.62037000000001], [44.641090000000005, -63.620340000000006], [44.641000000000005, -63.62022], [44.640910000000005, -63.620140000000006], [44.640730000000005, -63.619960000000006], [44.64058000000001, -63.61981000000001], [44.640480000000004, -63.61972000000001], [44.64025, -63.61968], [44.640130000000006, -63.61961000000001], [44.64002000000001, -63.61959], [44.63989, -63.619580000000006], [44.63969, -63.61959], [44.63946000000001, -63.619620000000005], [44.639250000000004, -63.61966], [44.63893, -63.619710000000005], [44.638720000000006, -63.61975], [44.63859, -63.61977], [44.638540000000006, -63.619820000000004], [44.638250000000006, -63.61995], [44.638250000000006, -63.61995], [44.63819, -63.61984], [44.63817, -63.619730000000004], [44.63817, -63.619690000000006], [44.63815, -63.61965000000001], [44.6381, -63.619640000000004], [44.63797, -63.619600000000005], [44.63792, -63.61959], [44.63779, -63.61957], [44.63776, -63.61957], [44.6375, -63.619600000000005], [44.637080000000005, -63.61977], [44.63674, -63.61990000000001]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_dc525735ffc450321a5f84cb55480820 = L.polyline(
+                [[44.63674, -63.61990000000001], [44.637080000000005, -63.61977], [44.6375, -63.619600000000005], [44.63776, -63.61957], [44.63779, -63.61957], [44.63792, -63.61959], [44.63797, -63.619600000000005], [44.6381, -63.619640000000004], [44.63815, -63.61965000000001], [44.63846, -63.61975], [44.63846, -63.61975], [44.63859, -63.61977], [44.638720000000006, -63.61975], [44.63893, -63.619710000000005], [44.639250000000004, -63.61966], [44.63946000000001, -63.619620000000005], [44.63969, -63.61959], [44.63989, -63.619580000000006], [44.64002000000001, -63.61959], [44.640130000000006, -63.61961000000001], [44.64025, -63.61968], [44.640480000000004, -63.61972000000001], [44.64058000000001, -63.61981000000001], [44.640730000000005, -63.619960000000006], [44.640910000000005, -63.620140000000006], [44.640910000000005, -63.620140000000006], [44.641000000000005, -63.62022], [44.64115, -63.62024], [44.64119, -63.62024], [44.641220000000004, -63.62023000000001], [44.64125000000001, -63.62022], [44.641360000000006, -63.620180000000005], [44.641360000000006, -63.620180000000005], [44.641360000000006, -63.620160000000006], [44.64137, -63.62015], [44.641380000000005, -63.62013], [44.641380000000005, -63.62012000000001], [44.64139, -63.620110000000004], [44.641400000000004, -63.62010000000001], [44.64141, -63.62008000000001], [44.64141, -63.620070000000005], [44.641450000000006, -63.620050000000006], [44.64148, -63.620020000000004], [44.641510000000004, -63.620000000000005], [44.64155, -63.619980000000005], [44.641580000000005, -63.61997], [44.64162, -63.61997], [44.641650000000006, -63.619960000000006], [44.641690000000004, -63.61997], [44.6417, -63.61997], [44.64171, -63.61997], [44.64171, -63.619980000000005], [44.64172000000001, -63.619980000000005], [44.64173, -63.619980000000005], [44.641740000000006, -63.61999000000001], [44.64175, -63.61999000000001], [44.64175, -63.620000000000005], [44.64190000000001, -63.619960000000006], [44.64195, -63.61995], [44.64199000000001, -63.61995], [44.642100000000006, -63.61994000000001], [44.642230000000005, -63.61992000000001], [44.642340000000004, -63.619870000000006], [44.642450000000004, -63.61985000000001], [44.64256, -63.61977], [44.642770000000006, -63.61956000000001], [44.642920000000004, -63.61941], [44.643040000000006, -63.61925000000001], [44.64305, -63.61925000000001], [44.64318, -63.619080000000004], [44.6432, -63.61905000000001], [44.64332, -63.61894], [44.64376, -63.618500000000004], [44.64392, -63.61834], [44.644130000000004, -63.61815000000001], [44.64416000000001, -63.618100000000005], [44.644200000000005, -63.61806000000001], [44.64423, -63.61802000000001], [44.64426, -63.61797000000001], [44.64462, -63.61735], [44.644850000000005, -63.616910000000004], [44.64486, -63.616890000000005], [44.644920000000006, -63.61675], [44.644980000000004, -63.61659], [44.645010000000006, -63.6165], [44.645030000000006, -63.61643000000001], [44.64506, -63.61634000000001], [44.64511, -63.61618000000001], [44.645210000000006, -63.61587000000001], [44.645270000000004, -63.615700000000004], [44.645270000000004, -63.61556], [44.645320000000005, -63.61542000000001], [44.64535, -63.61534], [44.645390000000006, -63.615210000000005], [44.64546000000001, -63.614990000000006], [44.64546000000001, -63.614990000000006], [44.64553, -63.615100000000005], [44.64555000000001, -63.61513000000001], [44.645700000000005, -63.61543], [44.64573, -63.61549000000001], [44.645830000000004, -63.615680000000005], [44.645900000000005, -63.61583], [44.64613000000001, -63.61632], [44.64623, -63.616530000000004], [44.64634, -63.61677], [44.646370000000005, -63.61684], [44.64640000000001, -63.616910000000004], [44.64641, -63.616960000000006], [44.646420000000006, -63.61699000000001], [44.646440000000005, -63.61706], [44.646460000000005, -63.61713], [44.64647, -63.61721000000001], [44.64649000000001, -63.61728000000001], [44.6465, -63.61737000000001], [44.646510000000006, -63.617450000000005], [44.64652, -63.61748000000001], [44.646530000000006, -63.61753], [44.646550000000005, -63.617610000000006], [44.646570000000004, -63.61768000000001], [44.64660000000001, -63.61775000000001], [44.64661, -63.61777000000001], [44.646620000000006, -63.617810000000006], [44.646640000000005, -63.61787], [44.6467, -63.61798], [44.646710000000006, -63.618], [44.646750000000004, -63.618080000000006], [44.64685, -63.61820000000001], [44.646950000000004, -63.61840000000001], [44.64706, -63.61862000000001], [44.64728, -63.618990000000004], [44.6475, -63.619310000000006], [44.64763000000001, -63.619530000000005], [44.64763000000001, -63.619530000000005], [44.64772000000001, -63.619310000000006], [44.647960000000005, -63.61871000000001], [44.64802, -63.61856], [44.648030000000006, -63.61851000000001], [44.64815, -63.618210000000005], [44.648270000000004, -63.617990000000006], [44.648360000000004, -63.61778], [44.64837000000001, -63.617760000000004], [44.64837000000001, -63.617760000000004], [44.64849, -63.61795000000001], [44.648520000000005, -63.618], [44.64855, -63.61802000000001], [44.64857000000001, -63.618030000000005], [44.648590000000006, -63.618030000000005], [44.64862, -63.61802000000001], [44.648680000000006, -63.61797000000001], [44.648830000000004, -63.61784000000001], [44.648950000000006, -63.617740000000005], [44.648970000000006, -63.617720000000006], [44.648970000000006, -63.617720000000006]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_db203053a1c5a94d3dc529119c00622a = L.polyline(
+                [[44.648970000000006, -63.617720000000006], [44.648950000000006, -63.617740000000005], [44.648830000000004, -63.61784000000001], [44.648680000000006, -63.61797000000001], [44.64862, -63.61802000000001], [44.648590000000006, -63.618030000000005], [44.64857000000001, -63.618030000000005], [44.64855, -63.61802000000001], [44.648520000000005, -63.618], [44.64849, -63.61795000000001], [44.64837000000001, -63.617760000000004], [44.64837000000001, -63.617760000000004], [44.648360000000004, -63.61778], [44.648270000000004, -63.617990000000006], [44.648230000000005, -63.61827], [44.6482, -63.61833000000001], [44.64810000000001, -63.618570000000005], [44.64809, -63.618610000000004], [44.64786, -63.619170000000004], [44.64777, -63.61939], [44.64768, -63.61961000000001], [44.64768, -63.61961000000001], [44.647870000000005, -63.61992000000001], [44.64790000000001, -63.619980000000005], [44.64809, -63.620290000000004], [44.64813, -63.620360000000005], [44.6482, -63.620470000000005], [44.64822, -63.620520000000006], [44.64837000000001, -63.620810000000006], [44.64846000000001, -63.621030000000005], [44.648720000000004, -63.62169000000001], [44.64871, -63.62183], [44.64882, -63.62216000000001], [44.64887, -63.6223], [44.64891, -63.622440000000005], [44.64907, -63.622890000000005], [44.649150000000006, -63.62312000000001], [44.64923, -63.62335], [44.649420000000006, -63.62389], [44.64945, -63.62397000000001], [44.649460000000005, -63.624], [44.64947, -63.624030000000005], [44.64947, -63.62404000000001], [44.64949, -63.62411], [44.64951000000001, -63.624190000000006], [44.64952, -63.624230000000004], [44.649530000000006, -63.62426000000001], [44.649530000000006, -63.62427], [44.649550000000005, -63.624340000000004], [44.64956, -63.624410000000005], [44.649570000000004, -63.62451000000001], [44.649570000000004, -63.62453000000001], [44.649570000000004, -63.62453000000001], [44.64943, -63.62451000000001], [44.649390000000004, -63.624500000000005], [44.649210000000004, -63.62447], [44.64911, -63.62445], [44.64903, -63.62445], [44.64893000000001, -63.62444000000001], [44.6488, -63.62442000000001], [44.648680000000006, -63.62440000000001], [44.648610000000005, -63.62438], [44.648540000000004, -63.624370000000006], [44.648320000000005, -63.624340000000004], [44.64813, -63.62431000000001], [44.647960000000005, -63.624280000000006], [44.64773, -63.62425], [44.647600000000004, -63.62422000000001], [44.64743000000001, -63.62418], [44.64737, -63.62417000000001], [44.64737, -63.62417000000001], [44.64732, -63.62406000000001], [44.647290000000005, -63.624010000000006], [44.647270000000006, -63.62395000000001], [44.64728, -63.62389], [44.647310000000004, -63.62382], [44.64732, -63.62379000000001], [44.64734000000001, -63.62373], [44.647360000000006, -63.62366000000001], [44.64737, -63.62355000000001]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_b5a39b9aec06d515e956289655d2333d = L.polyline(
+                [[44.64737, -63.62355000000001], [44.647360000000006, -63.62366000000001], [44.64734000000001, -63.62373], [44.64732, -63.62379000000001], [44.647310000000004, -63.62382], [44.64728, -63.62389], [44.647270000000006, -63.62395000000001], [44.647290000000005, -63.624010000000006], [44.64732, -63.62406000000001], [44.64737, -63.62417000000001], [44.64737, -63.62417000000001], [44.64743000000001, -63.62418], [44.647600000000004, -63.62422000000001], [44.64773, -63.62425], [44.647960000000005, -63.624280000000006], [44.64813, -63.62431000000001], [44.648320000000005, -63.624340000000004], [44.648540000000004, -63.624370000000006], [44.648610000000005, -63.62438], [44.648680000000006, -63.62440000000001], [44.6488, -63.62442000000001], [44.64893000000001, -63.62444000000001], [44.64903, -63.62445], [44.64911, -63.62445], [44.649210000000004, -63.62447], [44.649390000000004, -63.624500000000005], [44.64943, -63.62451000000001], [44.649570000000004, -63.62453000000001], [44.649570000000004, -63.62453000000001], [44.649570000000004, -63.624570000000006], [44.64958, -63.624660000000006], [44.64958, -63.62474], [44.649570000000004, -63.624810000000004], [44.649570000000004, -63.624880000000005], [44.64956, -63.62496000000001], [44.64954, -63.62503], [44.64952, -63.6251], [44.6495, -63.625170000000004], [44.649480000000004, -63.625240000000005], [44.649280000000005, -63.625840000000004], [44.649240000000006, -63.62597], [44.64922000000001, -63.626020000000004], [44.649210000000004, -63.626090000000005], [44.6492, -63.626160000000006], [44.649190000000004, -63.62626], [44.64916, -63.626490000000004], [44.64911, -63.626940000000005], [44.64905, -63.62744000000001], [44.64903, -63.62765], [44.649010000000004, -63.62776], [44.648990000000005, -63.62787000000001], [44.648950000000006, -63.62809000000001], [44.64894, -63.628150000000005], [44.648920000000004, -63.628240000000005], [44.64889, -63.628350000000005], [44.648880000000005, -63.62839], [44.64885, -63.6285], [44.64873, -63.62885000000001], [44.64865, -63.62915], [44.64864, -63.62921000000001], [44.64853, -63.62962], [44.64853, -63.62962], [44.648630000000004, -63.629670000000004], [44.64867, -63.629690000000004], [44.64871, -63.62971], [44.648740000000004, -63.62973], [44.64878, -63.629760000000005], [44.64882, -63.62979000000001], [44.64889, -63.629850000000005], [44.64893000000001, -63.62989], [44.649, -63.629960000000004], [44.64925, -63.630210000000005], [44.649260000000005, -63.63022000000001], [44.649330000000006, -63.63029], [44.649420000000006, -63.63035000000001], [44.649460000000005, -63.63038], [44.6495, -63.630410000000005], [44.64954, -63.630430000000004], [44.64967, -63.630500000000005], [44.649840000000005, -63.630590000000005], [44.64992, -63.630630000000004], [44.64997, -63.630660000000006], [44.650020000000005, -63.630680000000005], [44.65007000000001, -63.63069000000001], [44.65012, -63.630700000000004], [44.650180000000006, -63.630720000000004], [44.650240000000004, -63.630720000000004], [44.650360000000006, -63.63073000000001], [44.65055, -63.630720000000004], [44.65073, -63.630680000000005], [44.65075, -63.630680000000005], [44.65082, -63.63067], [44.65091, -63.63065], [44.651050000000005, -63.63062000000001], [44.651180000000004, -63.63060000000001], [44.65144, -63.63055000000001], [44.65158, -63.63053000000001], [44.65166000000001, -63.630520000000004], [44.651770000000006, -63.630500000000005], [44.65185, -63.63049], [44.652, -63.63047], [44.652, -63.63047], [44.652080000000005, -63.63046000000001], [44.65207, -63.630610000000004], [44.65202, -63.630990000000004], [44.652010000000004, -63.631040000000006], [44.652010000000004, -63.63105], [44.65195000000001, -63.631280000000004], [44.65194, -63.63132], [44.65185, -63.63163000000001], [44.651740000000004, -63.631980000000006], [44.65167, -63.63221000000001], [44.651590000000006, -63.63243000000001], [44.651500000000006, -63.63266000000001], [44.65142, -63.63288000000001], [44.6514, -63.632940000000005], [44.651120000000006, -63.63362000000001], [44.650960000000005, -63.63401], [44.650830000000006, -63.63434], [44.65054000000001, -63.63503000000001], [44.65028, -63.63562], [44.65007000000001, -63.63608000000001], [44.650040000000004, -63.63617000000001], [44.649820000000005, -63.63664000000001], [44.649820000000005, -63.63665], [44.649730000000005, -63.63667], [44.64967, -63.63680000000001], [44.64963, -63.636900000000004], [44.64959, -63.636990000000004], [44.64954, -63.63709000000001], [44.6495, -63.63718000000001], [44.649460000000005, -63.63729000000001], [44.64943, -63.637350000000005], [44.64938, -63.637460000000004], [44.64934, -63.63756000000001], [44.649300000000004, -63.63765000000001], [44.64925, -63.63776000000001], [44.64925, -63.63777], [44.649210000000004, -63.63785000000001], [44.64914, -63.638020000000004], [44.649060000000006, -63.63821000000001], [44.64903, -63.638270000000006], [44.648990000000005, -63.638360000000006], [44.648860000000006, -63.63866000000001], [44.64882, -63.638760000000005], [44.648700000000005, -63.63902], [44.64862, -63.639210000000006], [44.6486, -63.639250000000004], [44.64853, -63.63942000000001], [44.64844, -63.639630000000004], [44.648300000000006, -63.63993000000001], [44.64826, -63.64003], [44.648210000000006, -63.640130000000006], [44.64809, -63.64040000000001], [44.64804, -63.64052], [44.648, -63.64061], [44.64799000000001, -63.640620000000006], [44.64795, -63.64072], [44.647920000000006, -63.64079], [44.647870000000005, -63.6409], [44.64784, -63.64099], [44.64779, -63.64110000000001], [44.64775, -63.641180000000006], [44.6477, -63.641290000000005], [44.64766, -63.641380000000005], [44.64761, -63.64150000000001], [44.647560000000006, -63.64161000000001], [44.64752000000001, -63.64170000000001], [44.64748, -63.6418], [44.64744, -63.64190000000001], [44.64739, -63.642], [44.647360000000006, -63.642070000000004], [44.647310000000004, -63.64219000000001], [44.647270000000006, -63.64229], [44.64723, -63.64237000000001], [44.64719, -63.64247], [44.647180000000006, -63.64249], [44.64714, -63.642590000000006], [44.6471, -63.642680000000006], [44.64701, -63.642880000000005], [44.646930000000005, -63.64307000000001], [44.64687000000001, -63.64321], [44.64687000000001, -63.64321], [44.64688, -63.64334], [44.64688, -63.643350000000005], [44.646800000000006, -63.643510000000006], [44.64676, -63.643620000000006], [44.646750000000004, -63.643640000000005], [44.64674, -63.64368], [44.64672, -63.643730000000005], [44.6467, -63.64378000000001], [44.64669000000001, -63.643820000000005], [44.64668, -63.643860000000004], [44.646660000000004, -63.643980000000006], [44.646660000000004, -63.644040000000004], [44.646660000000004, -63.644090000000006], [44.646660000000004, -63.64415], [44.64667, -63.64425000000001], [44.64668, -63.64434000000001], [44.6467, -63.64444], [44.646730000000005, -63.644510000000004], [44.64676, -63.64457000000001], [44.646800000000006, -63.64466], [44.64685, -63.644740000000006], [44.6469, -63.644800000000004], [44.64694, -63.64486000000001], [44.64697, -63.64490000000001], [44.647020000000005, -63.644980000000004], [44.64708, -63.645070000000004], [44.647090000000006, -63.64509], [44.64712, -63.64515000000001], [44.64715, -63.645250000000004], [44.64715, -63.64526000000001], [44.64717, -63.64535000000001], [44.64719, -63.64549], [44.647180000000006, -63.645570000000006], [44.64717, -63.64566000000001], [44.64716000000001, -63.64576], [44.64714, -63.64585], [44.647090000000006, -63.645970000000005], [44.647040000000004, -63.64607], [44.646950000000004, -63.64623], [44.64692, -63.64634], [44.646910000000005, -63.64641], [44.6469, -63.64654], [44.64692, -63.64667000000001], [44.64696000000001, -63.64681], [44.64697, -63.646820000000005], [44.64701, -63.64694000000001], [44.647040000000004, -63.64706], [44.64715, -63.647220000000004], [44.64735, -63.64748000000001], [44.64790000000001, -63.64819000000001], [44.64791, -63.648210000000006], [44.648070000000004, -63.648410000000005], [44.64838, -63.64882000000001], [44.648430000000005, -63.648880000000005], [44.648770000000006, -63.649330000000006], [44.64878, -63.64934], [44.648790000000005, -63.64936000000001], [44.64893000000001, -63.649530000000006], [44.649100000000004, -63.649680000000004], [44.649240000000006, -63.649800000000006], [44.64938, -63.64985000000001], [44.64938, -63.64985000000001], [44.649480000000004, -63.649890000000006], [44.64945, -63.65007000000001], [44.649390000000004, -63.650470000000006], [44.64936, -63.65063000000001], [44.649350000000005, -63.65079000000001], [44.64936, -63.65115000000001], [44.64940000000001, -63.65133000000001], [44.64952, -63.65182000000001], [44.649710000000006, -63.65211000000001], [44.65003, -63.652590000000004], [44.650110000000005, -63.652730000000005], [44.650180000000006, -63.65283000000001], [44.65026, -63.652950000000004], [44.6503, -63.653040000000004], [44.650310000000005, -63.65305000000001], [44.65034000000001, -63.65312000000001], [44.65046, -63.65339], [44.6505, -63.653510000000004], [44.65052, -63.653620000000004], [44.65055, -63.65372000000001], [44.650560000000006, -63.653850000000006], [44.65057, -63.65393], [44.65057, -63.65397000000001], [44.65057, -63.65402], [44.65057, -63.65415000000001], [44.65057, -63.654230000000005], [44.65057, -63.65435000000001], [44.65055, -63.654500000000006], [44.650510000000004, -63.65466000000001], [44.65044, -63.65480000000001], [44.650290000000005, -63.65520000000001], [44.650200000000005, -63.655440000000006], [44.65014, -63.65556000000001], [44.65005, -63.655770000000004], [44.649950000000004, -63.65599], [44.649910000000006, -63.65607000000001], [44.64985, -63.656200000000005], [44.64976, -63.656420000000004], [44.64972, -63.65650000000001], [44.649660000000004, -63.65663000000001], [44.649570000000004, -63.656850000000006], [44.649480000000004, -63.65704], [44.64945, -63.65713], [44.64941, -63.657210000000006], [44.64907, -63.65800000000001], [44.64904000000001, -63.65807], [44.649, -63.658150000000006], [44.648900000000005, -63.658390000000004], [44.648770000000006, -63.658660000000005], [44.64865, -63.65889000000001], [44.64857000000001, -63.65905000000001], [44.64811, -63.66013], [44.64810000000001, -63.66013], [44.647850000000005, -63.660720000000005], [44.647690000000004, -63.66124000000001], [44.64764, -63.66149000000001], [44.64761, -63.66172], [44.647600000000004, -63.66187000000001], [44.647580000000005, -63.662130000000005], [44.647580000000005, -63.66245000000001], [44.64761, -63.66272000000001], [44.647650000000006, -63.66304], [44.64775, -63.663450000000005], [44.647830000000006, -63.66371], [44.647920000000006, -63.66393000000001], [44.64793, -63.66396], [44.647980000000004, -63.664060000000006], [44.648070000000004, -63.664210000000004], [44.648140000000005, -63.66431000000001], [44.648320000000005, -63.66465], [44.64842, -63.66485000000001], [44.64856, -63.665110000000006], [44.64873, -63.665470000000006], [44.64905, -63.666090000000004], [44.649260000000005, -63.666500000000006], [44.649280000000005, -63.666540000000005], [44.649350000000005, -63.666720000000005], [44.64951000000001, -63.667100000000005], [44.649570000000004, -63.66731000000001], [44.649620000000006, -63.667550000000006], [44.649660000000004, -63.66780000000001], [44.649660000000004, -63.668060000000004], [44.649660000000004, -63.66837], [44.64963, -63.668600000000005], [44.64963, -63.66864], [44.64961, -63.66879000000001], [44.64960000000001, -63.668890000000005], [44.64960000000001, -63.668910000000004], [44.649570000000004, -63.668980000000005], [44.649530000000006, -63.66911], [44.64945, -63.66935000000001], [44.64945, -63.669360000000005], [44.649440000000006, -63.6694], [44.649370000000005, -63.669610000000006], [44.649300000000004, -63.669810000000005], [44.64929, -63.66984000000001], [44.649100000000004, -63.67033000000001], [44.648970000000006, -63.67067000000001], [44.648880000000005, -63.670880000000004], [44.64871, -63.671260000000004], [44.648610000000005, -63.67143000000001], [44.64857000000001, -63.671490000000006], [44.64856, -63.6715], [44.6484, -63.671710000000004], [44.648340000000005, -63.671780000000005], [44.64828000000001, -63.67184], [44.648210000000006, -63.67190000000001], [44.648050000000005, -63.671980000000005], [44.64791, -63.672070000000005], [44.647850000000005, -63.67208000000001], [44.64779, -63.67210000000001], [44.64775, -63.67212000000001], [44.647670000000005, -63.672160000000005], [44.647580000000005, -63.67222], [44.64746, -63.67230000000001], [44.64739, -63.672360000000005], [44.647330000000004, -63.67242], [44.6473, -63.672450000000005], [44.646980000000006, -63.67277000000001], [44.646820000000005, -63.672940000000004], [44.64674, -63.673100000000005], [44.64674, -63.673100000000005], [44.646620000000006, -63.67325], [44.646530000000006, -63.67333000000001], [44.64647, -63.67322000000001], [44.646300000000004, -63.672920000000005], [44.646280000000004, -63.672880000000006], [44.64623, -63.67277000000001], [44.64618, -63.67268000000001], [44.64611, -63.67253], [44.646080000000005, -63.672470000000004], [44.646060000000006, -63.672430000000006], [44.64602000000001, -63.672320000000006], [44.645990000000005, -63.672250000000005], [44.645990000000005, -63.672230000000006], [44.64598, -63.672200000000004], [44.64594, -63.67208000000001], [44.645900000000005, -63.671960000000006], [44.645860000000006, -63.67183000000001], [44.64585, -63.671780000000005], [44.645810000000004, -63.671600000000005], [44.64578, -63.671380000000006], [44.645770000000006, -63.671330000000005], [44.64576, -63.67123000000001], [44.64575000000001, -63.671110000000006], [44.64575000000001, -63.67099], [44.64575000000001, -63.67087000000001], [44.64575000000001, -63.67074], [44.645770000000006, -63.670460000000006], [44.64578, -63.67031000000001], [44.645790000000005, -63.66995000000001], [44.645790000000005, -63.669790000000006], [44.645790000000005, -63.66968000000001], [44.645790000000005, -63.669630000000005], [44.64578, -63.669560000000004], [44.64578, -63.66948000000001], [44.64576, -63.66933], [44.64574, -63.66919000000001], [44.64574, -63.669180000000004], [44.645720000000004, -63.66906], [44.64569, -63.66893], [44.64565, -63.66879000000001], [44.64562, -63.668670000000006], [44.645540000000004, -63.668440000000004], [44.64549, -63.66832000000001], [44.64546000000001, -63.668220000000005], [44.645410000000005, -63.668110000000006], [44.645050000000005, -63.66722000000001], [44.6447, -63.66633], [44.644180000000006, -63.66494000000001], [44.644180000000006, -63.66494000000001], [44.644020000000005, -63.66508], [44.64383, -63.66523000000001], [44.6437, -63.665350000000004], [44.64356, -63.665470000000006], [44.64356, -63.665470000000006], [44.64374, -63.665910000000004], [44.64374, -63.66592000000001], [44.64378000000001, -63.66599000000001]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_8cd196cfd59fa889c3a956a6dd340c21 = L.polyline(
+                [[44.64378000000001, -63.66599000000001], [44.64374, -63.66592000000001], [44.64374, -63.665910000000004], [44.64356, -63.665470000000006], [44.64356, -63.665470000000006], [44.6437, -63.665350000000004], [44.64383, -63.66523000000001], [44.644020000000005, -63.66508], [44.644180000000006, -63.66494000000001], [44.644180000000006, -63.66494000000001], [44.644270000000006, -63.66485000000001], [44.64484, -63.666320000000006], [44.64515, -63.66713000000001], [44.64553, -63.66809000000001], [44.64558, -63.668220000000005], [44.645720000000004, -63.668580000000006], [44.64578, -63.668780000000005], [44.645830000000004, -63.66901000000001], [44.64587, -63.669270000000004], [44.64589, -63.669520000000006], [44.645900000000005, -63.66967], [44.64591, -63.669760000000004], [44.64591, -63.669790000000006], [44.64591, -63.66993000000001], [44.645900000000005, -63.67004000000001], [44.645860000000006, -63.67067000000001], [44.645860000000006, -63.670860000000005], [44.645860000000006, -63.67105000000001], [44.645880000000005, -63.671240000000004], [44.64589, -63.67134000000001], [44.645900000000005, -63.67141000000001], [44.645920000000004, -63.67155], [44.64594, -63.671690000000005], [44.645950000000006, -63.67172000000001], [44.645990000000005, -63.67188000000001], [44.646060000000006, -63.672090000000004], [44.64607, -63.67211], [44.64614, -63.672290000000004], [44.64616, -63.67233], [44.64622000000001, -63.67249], [44.64625, -63.672540000000005], [44.64632, -63.67269], [44.64656, -63.673140000000004], [44.646620000000006, -63.67325], [44.64669000000001, -63.673390000000005], [44.64688, -63.67374], [44.64701, -63.673950000000005], [44.64707000000001, -63.674040000000005], [44.647130000000004, -63.674110000000006], [44.64719, -63.67419], [44.64726, -63.674260000000004], [44.647330000000004, -63.674330000000005], [44.64735, -63.674350000000004], [44.647400000000005, -63.67439], [44.64748, -63.67446], [44.647560000000006, -63.67452000000001], [44.647650000000006, -63.67457], [44.647760000000005, -63.674640000000004], [44.64788, -63.67470000000001], [44.64810000000001, -63.674800000000005], [44.648390000000006, -63.674910000000004], [44.648700000000005, -63.67503000000001], [44.64891, -63.675110000000004], [44.64941, -63.67528000000001], [44.6503, -63.67555000000001], [44.65104, -63.67578], [44.65133, -63.67589], [44.6514, -63.675920000000005], [44.65157000000001, -63.675990000000006], [44.651720000000005, -63.67606000000001], [44.65198, -63.67620000000001], [44.65204000000001, -63.676230000000004], [44.65216, -63.67631000000001], [44.65232, -63.676410000000004], [44.652530000000006, -63.67656], [44.65267, -63.67667000000001], [44.652710000000006, -63.676700000000004], [44.652950000000004, -63.67691000000001], [44.653150000000004, -63.67709000000001], [44.653220000000005, -63.67716000000001], [44.65341, -63.677330000000005], [44.653580000000005, -63.67745000000001], [44.653650000000006, -63.677510000000005], [44.653740000000006, -63.67756000000001], [44.65382, -63.677600000000005], [44.65391, -63.677640000000004], [44.65401000000001, -63.67768], [44.654210000000006, -63.67775], [44.654320000000006, -63.67777], [44.65446, -63.677800000000005], [44.65453, -63.677800000000005], [44.65457000000001, -63.677800000000005], [44.65466000000001, -63.67781000000001], [44.65476, -63.677800000000005], [44.655100000000004, -63.677780000000006], [44.655240000000006, -63.677780000000006], [44.65567, -63.67775], [44.65574, -63.67775], [44.65585, -63.677760000000006], [44.65596, -63.67777], [44.65607000000001, -63.67779], [44.65616000000001, -63.67781000000001], [44.65626, -63.67784], [44.65635, -63.67788], [44.65643, -63.67792000000001], [44.65652, -63.67797], [44.65659, -63.678020000000004], [44.65666, -63.67808000000001], [44.656850000000006, -63.678250000000006], [44.65691, -63.678290000000004], [44.656960000000005, -63.67831], [44.65701000000001, -63.67832000000001], [44.657050000000005, -63.67833], [44.65710000000001, -63.67832000000001], [44.65715, -63.67830000000001], [44.657230000000006, -63.678250000000006], [44.657270000000004, -63.678200000000004], [44.657300000000006, -63.678160000000005], [44.65735, -63.67808000000001], [44.65737, -63.67804], [44.65739000000001, -63.677980000000005], [44.65746, -63.677820000000004], [44.657560000000004, -63.677600000000005], [44.657630000000005, -63.677440000000004], [44.657680000000006, -63.67728], [44.65771, -63.67719], [44.657740000000004, -63.67709000000001], [44.657770000000006, -63.676970000000004], [44.6578, -63.676860000000005], [44.65782, -63.676730000000006], [44.65784, -63.676590000000004], [44.65787, -63.67642000000001], [44.65787, -63.67642000000001], [44.65789, -63.676260000000006], [44.65791, -63.676050000000004], [44.65793, -63.67591], [44.65794, -63.675810000000006], [44.65796, -63.675630000000005], [44.65798, -63.675520000000006], [44.658060000000006, -63.675000000000004], [44.658100000000005, -63.67475], [44.65811, -63.67461000000001], [44.65813000000001, -63.67441], [44.65814, -63.674400000000006], [44.65814, -63.674380000000006], [44.658150000000006, -63.67425000000001], [44.65816, -63.67419], [44.65818, -63.673970000000004], [44.65822000000001, -63.67367000000001], [44.658260000000006, -63.673320000000004], [44.658390000000004, -63.67253], [44.65842000000001, -63.67233], [44.658440000000006, -63.67215], [44.658460000000005, -63.67202], [44.65852, -63.67163000000001], [44.65858, -63.671220000000005], [44.6587, -63.67034], [44.658770000000004, -63.66977000000001], [44.658820000000006, -63.66944000000001], [44.65885, -63.66919000000001], [44.658910000000006, -63.668690000000005], [44.658950000000004, -63.668420000000005], [44.65899, -63.66819], [44.65903, -63.66798000000001], [44.65905, -63.667880000000004], [44.6591, -63.66767000000001], [44.65912, -63.667590000000004], [44.65916000000001, -63.667460000000005], [44.659240000000004, -63.66718], [44.65932, -63.66695000000001], [44.659470000000006, -63.666560000000004], [44.65964, -63.6662], [44.65964, -63.6662], [44.65955, -63.66611], [44.65939, -63.66593], [44.659220000000005, -63.66570000000001], [44.65892, -63.66527000000001], [44.65892, -63.66527000000001], [44.65908, -63.665090000000006], [44.65908, -63.665090000000006], [44.65878, -63.66461], [44.658770000000004, -63.664590000000004], [44.658770000000004, -63.66458000000001], [44.658770000000004, -63.664570000000005], [44.65878, -63.664550000000006], [44.65887, -63.66442000000001], [44.65887, -63.66442000000001], [44.658750000000005, -63.66423], [44.658750000000005, -63.66423], [44.659060000000004, -63.66384000000001], [44.659110000000005, -63.66378], [44.659200000000006, -63.66368000000001], [44.659200000000006, -63.66367]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_2a6b88e9a5e0f5bbba469a11d5f019d8 = L.polyline(
+                [[44.659200000000006, -63.66367], [44.659200000000006, -63.66368000000001], [44.659110000000005, -63.66378], [44.659060000000004, -63.66384000000001], [44.658750000000005, -63.66423], [44.658750000000005, -63.66423], [44.658640000000005, -63.66407], [44.658640000000005, -63.66407], [44.658550000000005, -63.664190000000005], [44.65842000000001, -63.664350000000006], [44.65842000000001, -63.664350000000006], [44.65845, -63.664410000000004], [44.65861, -63.66472], [44.658640000000005, -63.66478000000001], [44.65865, -63.664840000000005], [44.65892, -63.66527000000001], [44.659220000000005, -63.66570000000001], [44.65939, -63.66593], [44.65955, -63.66611], [44.65964, -63.6662], [44.65964, -63.6662], [44.659780000000005, -63.66592000000001], [44.65997, -63.665600000000005], [44.66015, -63.66532000000001], [44.660270000000004, -63.66516000000001], [44.66038, -63.66501], [44.66048000000001, -63.6649], [44.66051, -63.664860000000004], [44.66084, -63.66445], [44.66091, -63.664370000000005], [44.66096, -63.664300000000004], [44.66113000000001, -63.66407], [44.66124000000001, -63.663900000000005], [44.661300000000004, -63.6638], [44.661390000000004, -63.66362000000001], [44.66147, -63.66346000000001], [44.66154, -63.66329], [44.661590000000004, -63.66319000000001], [44.661640000000006, -63.663050000000005], [44.66165, -63.66302], [44.661680000000004, -63.66295], [44.66172, -63.66282], [44.661750000000005, -63.66270000000001], [44.661820000000006, -63.66246], [44.661840000000005, -63.66234000000001], [44.6619, -63.6621], [44.66203, -63.66160000000001], [44.662060000000004, -63.66147000000001], [44.662060000000004, -63.66145], [44.66208, -63.661390000000004], [44.662110000000006, -63.661190000000005], [44.66214, -63.660970000000006], [44.66216000000001, -63.66078], [44.66217, -63.66073000000001], [44.662180000000006, -63.66062000000001], [44.662180000000006, -63.660450000000004], [44.662180000000006, -63.66031], [44.662180000000006, -63.66004], [44.662180000000006, -63.65997000000001], [44.66217, -63.65975], [44.66214, -63.659440000000004], [44.662110000000006, -63.659220000000005], [44.66205, -63.658680000000004], [44.662040000000005, -63.658570000000005], [44.66203, -63.65843], [44.662020000000005, -63.65823], [44.66203, -63.65813000000001], [44.66203, -63.65804000000001], [44.662040000000005, -63.657920000000004], [44.66205, -63.65787], [44.662060000000004, -63.657790000000006], [44.66207000000001, -63.65762000000001], [44.66207000000001, -63.65762000000001], [44.66172, -63.65744000000001], [44.66158, -63.65737000000001], [44.661460000000005, -63.65731], [44.66138, -63.65726000000001], [44.66127, -63.657180000000004], [44.6612, -63.65713], [44.66073, -63.65672000000001], [44.660540000000005, -63.65655], [44.66033, -63.65637], [44.659760000000006, -63.655860000000004], [44.65961, -63.65574000000001], [44.65961, -63.65574000000001], [44.65988, -63.655210000000004], [44.6599, -63.655170000000005], [44.65993, -63.65514], [44.65993, -63.65513000000001], [44.65995, -63.65511000000001], [44.659960000000005, -63.655100000000004], [44.659980000000004, -63.655080000000005], [44.66001000000001, -63.65505], [44.660180000000004, -63.65493000000001], [44.6602, -63.65491000000001], [44.660230000000006, -63.654880000000006], [44.660250000000005, -63.65485], [44.660270000000004, -63.65482000000001], [44.66029, -63.654790000000006], [44.66069, -63.653890000000004], [44.660700000000006, -63.653850000000006], [44.660700000000006, -63.65381000000001], [44.660700000000006, -63.65377000000001], [44.660700000000006, -63.653740000000006], [44.66069, -63.653710000000004], [44.66067, -63.65368000000001], [44.660650000000004, -63.65366], [44.660630000000005, -63.65363000000001], [44.66038, -63.65341000000001]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_0c62b16e9894a5990924a3bdb674d258 = L.polyline(
+                [[44.66038, -63.65341000000001], [44.660140000000006, -63.653200000000005], [44.659890000000004, -63.65298000000001], [44.65984, -63.652950000000004], [44.659800000000004, -63.652930000000005], [44.65977, -63.65292], [44.659740000000006, -63.652930000000005], [44.6597, -63.652950000000004], [44.65968, -63.65298000000001], [44.65966, -63.653020000000005], [44.65964, -63.65308], [44.659600000000005, -63.653180000000006], [44.659560000000006, -63.65328], [44.65952, -63.653360000000006], [44.65948, -63.65345000000001], [44.65943, -63.65352000000001], [44.659380000000006, -63.653600000000004], [44.659330000000004, -63.65366], [44.65927000000001, -63.65372000000001], [44.65907000000001, -63.65391], [44.659060000000004, -63.65392000000001], [44.65894, -63.654050000000005], [44.658930000000005, -63.65406000000001], [44.65887, -63.65411], [44.65885, -63.65415000000001], [44.658820000000006, -63.65419000000001], [44.65880000000001, -63.654230000000005], [44.65879, -63.65424000000001], [44.658770000000004, -63.65428000000001], [44.658590000000004, -63.65467], [44.658530000000006, -63.654810000000005], [44.658530000000006, -63.654810000000005], [44.658440000000006, -63.65473000000001], [44.65836, -63.65466000000001], [44.65836, -63.654650000000004], [44.65829, -63.65457000000001], [44.658210000000004, -63.65448000000001], [44.658150000000006, -63.65439000000001], [44.658080000000005, -63.65429], [44.65802, -63.654180000000004], [44.65796, -63.654070000000004], [44.65793, -63.654], [44.65789, -63.65390000000001], [44.65786000000001, -63.653800000000004], [44.65773, -63.65332000000001], [44.657500000000006, -63.652460000000005], [44.65731, -63.651720000000005], [44.65722, -63.651410000000006], [44.65713, -63.65104], [44.65713, -63.65104], [44.657050000000005, -63.650740000000006], [44.657000000000004, -63.650560000000006], [44.657120000000006, -63.65050000000001], [44.65717, -63.65048], [44.657270000000004, -63.65044], [44.65735, -63.65041000000001], [44.657410000000006, -63.650400000000005], [44.65744, -63.65039000000001], [44.657520000000005, -63.65037], [44.65758, -63.65037], [44.6576, -63.650360000000006], [44.657680000000006, -63.65035], [44.65775000000001, -63.65035], [44.657830000000004, -63.65035], [44.657990000000005, -63.65037], [44.65807, -63.65039000000001], [44.658080000000005, -63.65039000000001], [44.65813000000001, -63.65041000000001], [44.6582, -63.65044], [44.658260000000006, -63.650470000000006], [44.65831, -63.65050000000001], [44.65836, -63.65053], [44.65842000000001, -63.65057], [44.658440000000006, -63.65059000000001], [44.658570000000005, -63.650690000000004], [44.658770000000004, -63.650870000000005], [44.65921, -63.651250000000005], [44.659290000000006, -63.651320000000005], [44.659310000000005, -63.651340000000005], [44.659600000000005, -63.651590000000006], [44.65973, -63.651700000000005], [44.65975, -63.651720000000005], [44.66029, -63.65218000000001], [44.66039000000001, -63.652280000000005], [44.66085, -63.652680000000004], [44.661100000000005, -63.652890000000006], [44.66131, -63.65308], [44.66223, -63.65388000000001], [44.66255, -63.65415000000001], [44.66277, -63.65435000000001], [44.662960000000005, -63.65451], [44.66304, -63.65458], [44.66326, -63.654770000000006], [44.66355, -63.655030000000004], [44.66386000000001, -63.65529000000001], [44.663920000000005, -63.65534], [44.66398, -63.65540000000001], [44.664010000000005, -63.65542000000001], [44.66404000000001, -63.655460000000005], [44.664080000000006, -63.65549000000001], [44.66418, -63.655590000000004], [44.66423, -63.655640000000005], [44.664460000000005, -63.655910000000006], [44.66456, -63.65603000000001], [44.664640000000006, -63.656150000000004], [44.66472, -63.65628], [44.665090000000006, -63.65684], [44.66559, -63.6576], [44.66584, -63.65798], [44.66612000000001, -63.65840000000001], [44.66612000000001, -63.65840000000001], [44.66622, -63.658280000000005], [44.66631, -63.658150000000006], [44.66639000000001, -63.65802000000001], [44.666430000000005, -63.657970000000006], [44.666450000000005, -63.65793000000001], [44.66648000000001, -63.65787], [44.66651, -63.65782000000001], [44.66653, -63.657770000000006], [44.66655, -63.657720000000005], [44.66659000000001, -63.657630000000005], [44.66659000000001, -63.657630000000005], [44.667030000000004, -63.657990000000005], [44.667080000000006, -63.65802000000001], [44.667120000000004, -63.65804000000001], [44.66716, -63.65805], [44.6672, -63.65804000000001], [44.66724000000001, -63.65802000000001], [44.66727, -63.65800000000001], [44.667300000000004, -63.657970000000006], [44.667300000000004, -63.65796], [44.66734, -63.65791000000001], [44.66758, -63.65739000000001], [44.6677, -63.65713], [44.667950000000005, -63.65659000000001], [44.6683, -63.655820000000006], [44.66837, -63.65567000000001], [44.66839, -63.655620000000006], [44.66841, -63.65558000000001], [44.668440000000004, -63.655550000000005], [44.668470000000006, -63.65552], [44.668490000000006, -63.6555], [44.66852, -63.65549000000001], [44.66856000000001, -63.65549000000001], [44.66859, -63.65549000000001], [44.668730000000004, -63.6555], [44.669430000000006, -63.655620000000006], [44.669430000000006, -63.655620000000006], [44.669450000000005, -63.65542000000001], [44.66949, -63.65525], [44.66953, -63.65513000000001], [44.66958, -63.65498], [44.66962, -63.654880000000006], [44.66964, -63.654830000000004], [44.669760000000004, -63.65455000000001], [44.669850000000004, -63.65433000000001], [44.66987, -63.65429], [44.669900000000005, -63.65422], [44.669920000000005, -63.65419000000001], [44.66995000000001, -63.654120000000006], [44.67025, -63.65348], [44.670300000000005, -63.653380000000006], [44.67031, -63.65334000000001], [44.670350000000006, -63.653270000000006], [44.670370000000005, -63.653220000000005], [44.6704, -63.65317], [44.67042000000001, -63.65314000000001], [44.67052, -63.65296000000001], [44.67069, -63.65274000000001], [44.670820000000006, -63.65263], [44.670910000000006, -63.65256000000001], [44.670970000000004, -63.652530000000006], [44.67098, -63.65252], [44.671020000000006, -63.6525], [44.67108, -63.652480000000004], [44.671130000000005, -63.652460000000005], [44.671150000000004, -63.65245], [44.67119, -63.652440000000006], [44.671240000000004, -63.65243], [44.6713, -63.652420000000006], [44.67136000000001, -63.652420000000006], [44.67148, -63.65241], [44.67179, -63.65240000000001], [44.67183000000001, -63.65240000000001], [44.67201, -63.652390000000004], [44.67237, -63.652370000000005], [44.67255, -63.65236000000001], [44.67273, -63.652350000000006], [44.67291, -63.65236000000001], [44.67298, -63.65236000000001], [44.67302, -63.65236000000001], [44.67305, -63.652350000000006], [44.673080000000006, -63.65234], [44.673100000000005, -63.65232], [44.673120000000004, -63.65229000000001], [44.67318, -63.65220000000001], [44.673210000000005, -63.65214], [44.67329, -63.65196], [44.67334, -63.65185], [44.67336, -63.65178], [44.67338, -63.65171000000001], [44.673390000000005, -63.65164000000001], [44.6734, -63.65155000000001], [44.673390000000005, -63.651210000000006], [44.6734, -63.65110000000001], [44.6734, -63.65104], [44.673410000000004, -63.65099000000001], [44.67342, -63.65095], [44.67345, -63.650870000000005], [44.673480000000005, -63.65081000000001], [44.67354, -63.65068000000001], [44.673590000000004, -63.65057], [44.67385, -63.65005000000001], [44.673880000000004, -63.650000000000006], [44.67391000000001, -63.649950000000004], [44.67394, -63.64992000000001], [44.673970000000004, -63.649890000000006], [44.67398, -63.64988], [44.67401, -63.649860000000004], [44.67405, -63.64985000000001], [44.67409000000001, -63.64983000000001], [44.674130000000005, -63.64983000000001], [44.67427000000001, -63.64981], [44.6745, -63.64981], [44.674640000000004, -63.649800000000006], [44.67474000000001, -63.649800000000006], [44.674800000000005, -63.64979], [44.674820000000004, -63.64978000000001], [44.674850000000006, -63.649770000000004], [44.67488, -63.64974000000001], [44.674910000000004, -63.64972], [44.67493, -63.649680000000004], [44.67494000000001, -63.64963], [44.67495, -63.649570000000004], [44.67495, -63.64949000000001], [44.67495, -63.649390000000004], [44.674960000000006, -63.64923], [44.674960000000006, -63.64914], [44.674960000000006, -63.649100000000004], [44.674980000000005, -63.64898], [44.67499, -63.648880000000005], [44.675050000000006, -63.64865], [44.67512000000001, -63.648390000000006], [44.675140000000006, -63.648340000000005], [44.675200000000004, -63.64815000000001], [44.67521000000001, -63.64811], [44.675290000000004, -63.64790000000001], [44.675290000000004, -63.647890000000004], [44.675360000000005, -63.647710000000004], [44.675360000000005, -63.647710000000004], [44.67557, -63.647890000000004], [44.6756, -63.64791], [44.67586, -63.64813], [44.67611, -63.648340000000005], [44.67631, -63.64851], [44.67647, -63.648630000000004], [44.676640000000006, -63.64876], [44.67669, -63.648810000000005], [44.67680000000001, -63.648880000000005], [44.67689, -63.648950000000006], [44.67696, -63.64900000000001], [44.676970000000004, -63.649010000000004]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_9dcd19bdbe6ee76b14f2e01864dc5c0c = L.polyline(
+                [[44.676970000000004, -63.649010000000004], [44.67696, -63.64900000000001], [44.67689, -63.648950000000006], [44.67680000000001, -63.648880000000005], [44.67669, -63.648810000000005], [44.676640000000006, -63.64876], [44.67647, -63.648630000000004], [44.67631, -63.64851], [44.67611, -63.648340000000005], [44.67586, -63.64813], [44.6756, -63.64791], [44.67557, -63.647890000000004], [44.675360000000005, -63.647710000000004], [44.675090000000004, -63.64748000000001], [44.67499, -63.64739000000001], [44.67495, -63.64735], [44.67486, -63.647270000000006], [44.67483000000001, -63.647240000000004], [44.674710000000005, -63.647110000000005], [44.674620000000004, -63.64699], [44.67461, -63.64699], [44.67456000000001, -63.64692000000001], [44.67447000000001, -63.64679], [44.67436000000001, -63.646640000000005], [44.674260000000004, -63.646480000000004], [44.674130000000005, -63.646260000000005], [44.67401, -63.64603], [44.67380000000001, -63.64567], [44.673640000000006, -63.645390000000006], [44.67354, -63.645230000000005], [44.673480000000005, -63.645140000000005], [44.6734, -63.64504000000001], [44.673210000000005, -63.64481000000001], [44.672700000000006, -63.644220000000004], [44.67239000000001, -63.643860000000004], [44.67239000000001, -63.643860000000004], [44.672360000000005, -63.6439], [44.672250000000005, -63.6441], [44.672250000000005, -63.6441], [44.67230000000001, -63.64414000000001], [44.672380000000004, -63.64423000000001], [44.672380000000004, -63.64423000000001], [44.672410000000006, -63.644380000000005], [44.67242, -63.64441000000001], [44.67242, -63.64443000000001], [44.67242, -63.64446], [44.672410000000006, -63.644510000000004], [44.6724, -63.644560000000006], [44.67239000000001, -63.644600000000004], [44.67237, -63.64464], [44.67235, -63.64466], [44.672320000000006, -63.64466], [44.672290000000004, -63.64466], [44.672250000000005, -63.644650000000006], [44.67221000000001, -63.64463000000001], [44.672160000000005, -63.64461000000001], [44.672140000000006, -63.644600000000004]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_9b45e1d8aeea635ebb9ea8b15f79950a = L.polyline(
+                [[44.672140000000006, -63.644600000000004], [44.67203000000001, -63.64453], [44.67188, -63.644420000000004], [44.67188, -63.644420000000004], [44.67192000000001, -63.644290000000005], [44.67199, -63.64423000000001], [44.67206, -63.64414000000001], [44.67208, -63.64412000000001], [44.67213, -63.644020000000005], [44.67213, -63.644020000000005], [44.67221000000001, -63.644070000000006], [44.672250000000005, -63.6441], [44.672250000000005, -63.6441], [44.672360000000005, -63.6439], [44.67239000000001, -63.643860000000004], [44.67239000000001, -63.643860000000004], [44.672320000000006, -63.64377], [44.67204, -63.64343], [44.67186, -63.64322000000001], [44.67141, -63.64269], [44.67105, -63.64228000000001], [44.670570000000005, -63.64175], [44.67049, -63.641650000000006], [44.670280000000005, -63.641420000000004], [44.66998, -63.641090000000005], [44.66989, -63.640980000000006], [44.669760000000004, -63.640840000000004], [44.668980000000005, -63.639950000000006], [44.668870000000005, -63.639810000000004], [44.66832, -63.63918], [44.66778, -63.638560000000005], [44.66707, -63.6377], [44.666920000000005, -63.63752], [44.666700000000006, -63.63725000000001], [44.666540000000005, -63.63705], [44.66631, -63.63676], [44.6661, -63.636520000000004], [44.665710000000004, -63.636050000000004], [44.665690000000005, -63.63602], [44.665440000000004, -63.63570000000001], [44.665240000000004, -63.63546], [44.66523, -63.635450000000006], [44.66507000000001, -63.63526], [44.66496, -63.63512000000001], [44.66478, -63.634910000000005], [44.66467, -63.63477], [44.66442000000001, -63.63445000000001], [44.66429, -63.63429000000001], [44.664080000000006, -63.63394], [44.66398, -63.633790000000005], [44.66386000000001, -63.633590000000005], [44.6638, -63.63347], [44.66375, -63.633390000000006], [44.66367, -63.633210000000005], [44.663590000000006, -63.63304000000001], [44.66348000000001, -63.63277000000001], [44.66339000000001, -63.63252000000001], [44.663340000000005, -63.632380000000005], [44.663320000000006, -63.63232000000001], [44.66317, -63.63188], [44.663030000000006, -63.63147000000001], [44.66284, -63.63092], [44.662780000000005, -63.630770000000005], [44.66255, -63.630100000000006], [44.662530000000004, -63.63002], [44.6625, -63.62993], [44.66248, -63.629850000000005], [44.66246, -63.62975000000001], [44.662440000000004, -63.62968000000001], [44.662440000000004, -63.62966000000001], [44.66243, -63.629540000000006], [44.662420000000004, -63.62942], [44.66241, -63.629310000000004], [44.66241, -63.62924], [44.662400000000005, -63.62919000000001], [44.662420000000004, -63.62897], [44.662440000000004, -63.62865000000001], [44.66245000000001, -63.62861], [44.66245000000001, -63.62857], [44.66246, -63.62847000000001], [44.662470000000006, -63.62836000000001], [44.662490000000005, -63.62818000000001], [44.662510000000005, -63.62800000000001], [44.66254000000001, -63.627660000000006], [44.662580000000005, -63.627120000000005], [44.662600000000005, -63.626470000000005], [44.662600000000005, -63.62626], [44.662600000000005, -63.62615], [44.662600000000005, -63.625800000000005], [44.662580000000005, -63.6253], [44.66257, -63.62501], [44.662560000000006, -63.62489000000001], [44.66254000000001, -63.624610000000004], [44.66254000000001, -63.624500000000005], [44.66252, -63.62425], [44.66252, -63.624230000000004], [44.662510000000005, -63.62391], [44.6625, -63.62375000000001], [44.662470000000006, -63.623650000000005], [44.662470000000006, -63.62364], [44.662470000000006, -63.62350000000001], [44.662470000000006, -63.62337000000001], [44.662490000000005, -63.62326], [44.662490000000005, -63.623250000000006], [44.662510000000005, -63.62314000000001], [44.662510000000005, -63.62314000000001], [44.66255, -63.622890000000005], [44.662580000000005, -63.62272000000001], [44.66259, -63.62265000000001], [44.66261, -63.62254000000001], [44.66264, -63.62243000000001], [44.66268, -63.62229000000001], [44.662780000000005, -63.622330000000005], [44.662850000000006, -63.622330000000005], [44.66292000000001, -63.622330000000005], [44.662980000000005, -63.62232], [44.66304, -63.62229000000001], [44.66310000000001, -63.622260000000004], [44.66311, -63.62225000000001], [44.663160000000005, -63.62221], [44.66321000000001, -63.62216000000001], [44.66326, -63.6221], [44.663270000000004, -63.62209000000001], [44.66339000000001, -63.621930000000006], [44.6638, -63.62138], [44.66398, -63.62116], [44.66413, -63.620990000000006], [44.66449, -63.620630000000006], [44.66471000000001, -63.620400000000004], [44.66479, -63.62032000000001], [44.66481, -63.62030000000001], [44.664860000000004, -63.62023000000001], [44.66494, -63.620140000000006], [44.66499, -63.62008000000001], [44.66501, -63.620050000000006], [44.665110000000006, -63.61992000000001], [44.66516, -63.61983000000001], [44.66527000000001, -63.61963000000001], [44.665310000000005, -63.61956000000001], [44.66537, -63.61947000000001], [44.665420000000005, -63.619400000000006], [44.665470000000006, -63.61936000000001], [44.66552, -63.6193], [44.665560000000006, -63.61927000000001], [44.665580000000006, -63.619240000000005], [44.665620000000004, -63.61921], [44.66564, -63.619200000000006], [44.66568, -63.619170000000004], [44.66573, -63.619130000000006], [44.665780000000005, -63.6191], [44.66581, -63.619080000000004], [44.66583000000001, -63.61907000000001], [44.665910000000004, -63.619020000000006], [44.665960000000005, -63.61900000000001], [44.66601000000001, -63.61898000000001], [44.666070000000005, -63.61896000000001], [44.66608, -63.618950000000005], [44.66612000000001, -63.61894], [44.66615, -63.618930000000006], [44.6662, -63.61892], [44.66624, -63.61891000000001], [44.66628, -63.618900000000004], [44.666320000000006, -63.61889000000001], [44.66635, -63.61889000000001], [44.66639000000001, -63.61889000000001], [44.66644, -63.61889000000001], [44.66651, -63.618900000000004], [44.6666, -63.61891000000001], [44.666630000000005, -63.61892], [44.66675, -63.618950000000005], [44.666790000000006, -63.61896000000001], [44.6668, -63.61896000000001], [44.66704000000001, -63.61903], [44.668000000000006, -63.619260000000004], [44.66832, -63.619330000000005], [44.668580000000006, -63.61937], [44.668580000000006, -63.61937], [44.668600000000005, -63.61938000000001], [44.66863, -63.61937], [44.66866, -63.61937], [44.668690000000005, -63.61937], [44.668710000000004, -63.61937], [44.66872, -63.61937], [44.66874000000001, -63.61937], [44.668850000000006, -63.619350000000004], [44.66895, -63.619330000000005], [44.66897, -63.619330000000005], [44.669090000000004, -63.6193], [44.669270000000004, -63.619240000000005], [44.66939000000001, -63.61918000000001], [44.66953, -63.619110000000006], [44.66966, -63.61903], [44.66968000000001, -63.61901], [44.669720000000005, -63.618970000000004], [44.66982, -63.618880000000004], [44.66991, -63.61880000000001], [44.66993, -63.618790000000004], [44.67006000000001, -63.61867000000001], [44.67016, -63.61860000000001], [44.67112, -63.617760000000004], [44.67116, -63.617720000000006], [44.671220000000005, -63.617670000000004], [44.67128, -63.61762], [44.671330000000005, -63.61757000000001], [44.67145, -63.617470000000004], [44.67156000000001, -63.61737000000001], [44.671730000000004, -63.61722], [44.67195, -63.61703000000001], [44.67211, -63.616890000000005], [44.672380000000004, -63.61665000000001], [44.67249, -63.616550000000004], [44.67343, -63.61572], [44.67396, -63.615260000000006], [44.67399, -63.61524000000001], [44.67421, -63.61504000000001], [44.674510000000005, -63.614810000000006], [44.67457, -63.61475000000001], [44.674670000000006, -63.61468000000001], [44.674730000000004, -63.61462], [44.674820000000004, -63.614540000000005], [44.67493, -63.614450000000005], [44.675070000000005, -63.61433], [44.6751, -63.61430000000001], [44.67524, -63.614180000000005], [44.675250000000005, -63.61417000000001], [44.67528, -63.61415], [44.675290000000004, -63.614140000000006], [44.67541000000001, -63.61404], [44.675560000000004, -63.613910000000004], [44.67566, -63.61383000000001], [44.67571, -63.613780000000006], [44.67587, -63.61365000000001], [44.675900000000006, -63.613620000000004], [44.675940000000004, -63.613580000000006], [44.676, -63.613530000000004], [44.676100000000005, -63.613440000000004], [44.67625, -63.613310000000006], [44.67638, -63.613200000000006], [44.676550000000006, -63.613040000000005], [44.676610000000004, -63.61299], [44.676700000000004, -63.6129], [44.676860000000005, -63.612770000000005], [44.677060000000004, -63.61258000000001], [44.677220000000005, -63.61245], [44.67737, -63.612320000000004], [44.67747000000001, -63.612230000000004], [44.67768, -63.61205], [44.678140000000006, -63.61166000000001], [44.678290000000004, -63.611520000000006], [44.67844, -63.61139000000001], [44.67875, -63.61112000000001], [44.678900000000006, -63.610980000000005], [44.679050000000004, -63.610850000000006], [44.6792, -63.610710000000005], [44.68000000000001, -63.61000000000001], [44.680110000000006, -63.6099], [44.68019, -63.609840000000005], [44.680420000000005, -63.60963], [44.68209, -63.608140000000006], [44.68224, -63.60801000000001], [44.68234, -63.607910000000004], [44.68235000000001, -63.60790000000001], [44.68245, -63.607820000000004], [44.68256, -63.607710000000004], [44.68265, -63.60764], [44.682680000000005, -63.607620000000004], [44.682790000000004, -63.607510000000005], [44.682900000000004, -63.60741000000001], [44.68300000000001, -63.60732000000001], [44.68376000000001, -63.606660000000005], [44.68439, -63.60609], [44.68451, -63.60598], [44.684540000000005, -63.60596], [44.68469, -63.605830000000005], [44.68477, -63.605760000000004], [44.684810000000006, -63.60573000000001], [44.684960000000004, -63.60559000000001], [44.68511, -63.60546000000001], [44.68513, -63.60544000000001], [44.68569, -63.60495], [44.68603, -63.60465000000001], [44.6861, -63.60459], [44.686240000000005, -63.60446], [44.68632, -63.60436000000001], [44.686420000000005, -63.60423000000001], [44.686440000000005, -63.60419], [44.686490000000006, -63.60412], [44.68657, -63.60396000000001], [44.68666, -63.603750000000005], [44.686690000000006, -63.603660000000005], [44.686730000000004, -63.60356], [44.68676000000001, -63.60345], [44.68676000000001, -63.603440000000006], [44.68683, -63.60320000000001], [44.686930000000004, -63.602720000000005], [44.68695, -63.602630000000005], [44.68699, -63.602410000000006], [44.68703000000001, -63.602140000000006], [44.687090000000005, -63.60170000000001], [44.687160000000006, -63.601440000000004], [44.687200000000004, -63.601290000000006], [44.687200000000004, -63.60127000000001], [44.68722, -63.60118000000001], [44.68724, -63.60108], [44.687270000000005, -63.600910000000006], [44.68728, -63.600680000000004], [44.687290000000004, -63.600550000000005], [44.6873, -63.60032], [44.687290000000004, -63.599320000000006], [44.687290000000004, -63.59910000000001], [44.687290000000004, -63.59888000000001], [44.687290000000004, -63.598870000000005], [44.687290000000004, -63.598510000000005], [44.687290000000004, -63.59832000000001], [44.6873, -63.598150000000004], [44.68732000000001, -63.597910000000006], [44.687340000000006, -63.5977], [44.687380000000005, -63.59740000000001], [44.687470000000005, -63.59693000000001], [44.687520000000006, -63.596720000000005], [44.68759, -63.59646000000001], [44.68762, -63.59635000000001], [44.68762, -63.596340000000005], [44.68769, -63.596140000000005], [44.6878, -63.59583000000001], [44.68786, -63.59566], [44.687940000000005, -63.59548], [44.688280000000006, -63.594710000000006], [44.68871, -63.593790000000006], [44.68871, -63.593790000000006], [44.688700000000004, -63.59367], [44.688700000000004, -63.59366000000001], [44.688770000000005, -63.59338], [44.688770000000005, -63.59335000000001], [44.68876, -63.593250000000005], [44.68874, -63.593160000000005], [44.68871, -63.593090000000004], [44.688660000000006, -63.59304], [44.688610000000004, -63.593], [44.68856, -63.592980000000004], [44.688500000000005, -63.592980000000004], [44.68842, -63.593], [44.688300000000005, -63.59308000000001], [44.68818, -63.593210000000006], [44.68798, -63.59337000000001], [44.68789, -63.59347], [44.68784, -63.593560000000004], [44.68782, -63.5936], [44.68782, -63.59367], [44.68782, -63.593720000000005], [44.68782, -63.593740000000004], [44.687830000000005, -63.59382000000001], [44.687850000000005, -63.59386000000001], [44.68786, -63.59389], [44.68789, -63.59393000000001], [44.68789, -63.59394], [44.687900000000006, -63.59395000000001], [44.68795, -63.594030000000004], [44.687960000000004, -63.59404000000001], [44.68815, -63.59420000000001], [44.68816, -63.594210000000004], [44.688230000000004, -63.59433000000001], [44.688230000000004, -63.59433000000001], [44.68838, -63.594440000000006], [44.68849, -63.59452], [44.68862, -63.594620000000006], [44.68907, -63.594950000000004], [44.689400000000006, -63.59519], [44.68952, -63.59528], [44.68963, -63.59536000000001], [44.68967000000001, -63.595380000000006], [44.690000000000005, -63.59561000000001], [44.69041000000001, -63.59591], [44.690690000000004, -63.59611], [44.69088000000001, -63.596250000000005], [44.691120000000005, -63.59639000000001], [44.69144000000001, -63.596630000000005], [44.69153, -63.59669], [44.69162, -63.59676], [44.691990000000004, -63.59705], [44.69225, -63.59723], [44.692260000000005, -63.597240000000006], [44.692420000000006, -63.597350000000006], [44.69247, -63.597390000000004], [44.69263, -63.59752], [44.692750000000004, -63.59763], [44.69283, -63.5977], [44.69296000000001, -63.59783], [44.693130000000004, -63.59801], [44.69326, -63.59817], [44.693430000000006, -63.59839], [44.69377, -63.59890000000001], [44.69426000000001, -63.59958], [44.694500000000005, -63.599940000000004], [44.69454, -63.599990000000005], [44.694700000000005, -63.600210000000004], [44.69476, -63.60029000000001], [44.694860000000006, -63.60043], [44.695130000000006, -63.60078000000001], [44.695310000000006, -63.60098000000001], [44.69539, -63.60108], [44.69561, -63.6013], [44.69561, -63.6013], [44.6957, -63.601510000000005], [44.695800000000006, -63.60155], [44.696000000000005, -63.601710000000004], [44.69615, -63.601870000000005], [44.696310000000004, -63.60204], [44.69633, -63.602050000000006], [44.69651, -63.602250000000005], [44.69661000000001, -63.60237000000001], [44.696630000000006, -63.602410000000006], [44.69664, -63.602410000000006], [44.69668, -63.60249], [44.69689, -63.60278], [44.697050000000004, -63.603010000000005], [44.69731, -63.603390000000005], [44.69744, -63.60356], [44.6976, -63.60381], [44.69792, -63.60427000000001], [44.69798, -63.60437], [44.69809, -63.604530000000004], [44.69816, -63.60464], [44.69838, -63.604960000000005], [44.698620000000005, -63.60526000000001], [44.698750000000004, -63.605430000000005], [44.69886, -63.60558], [44.699090000000005, -63.60586000000001], [44.699220000000004, -63.60598], [44.699310000000004, -63.60607], [44.699360000000006, -63.60611000000001], [44.69944, -63.60618], [44.699560000000005, -63.60627], [44.699580000000005, -63.606280000000005], [44.699720000000006, -63.606370000000005], [44.69986, -63.60645], [44.69993, -63.606500000000004], [44.700100000000006, -63.60661], [44.70029, -63.60674], [44.70033, -63.60676000000001], [44.70056, -63.60689000000001], [44.70067, -63.60694000000001], [44.70074, -63.60698000000001], [44.70103, -63.60717], [44.701190000000004, -63.60727000000001], [44.701240000000006, -63.6073], [44.701350000000005, -63.60736000000001], [44.70147, -63.60746], [44.70158000000001, -63.60756000000001], [44.70179, -63.607760000000006], [44.70185, -63.607820000000004], [44.70196000000001, -63.60797], [44.702110000000005, -63.60819000000001], [44.702110000000005, -63.60819000000001], [44.701910000000005, -63.60857000000001], [44.7019, -63.6086], [44.70179, -63.60878], [44.70168, -63.608990000000006], [44.701570000000004, -63.609140000000004], [44.701460000000004, -63.60929000000001]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_481db2b7216299acda892b064d024210 = L.polyline(
+                [[44.701460000000004, -63.60929000000001], [44.701570000000004, -63.609140000000004], [44.70168, -63.608990000000006], [44.70179, -63.60878], [44.7019, -63.6086], [44.701910000000005, -63.60857000000001], [44.702110000000005, -63.60819000000001], [44.702110000000005, -63.60819000000001], [44.70196000000001, -63.60797], [44.70185, -63.607820000000004], [44.70179, -63.607760000000006], [44.70158000000001, -63.60756000000001], [44.70147, -63.60746], [44.701350000000005, -63.60736000000001], [44.701240000000006, -63.6073], [44.701190000000004, -63.60727000000001], [44.70103, -63.60717], [44.70074, -63.60698000000001], [44.70067, -63.60694000000001], [44.70056, -63.60689000000001], [44.70033, -63.60676000000001], [44.70029, -63.60674], [44.700100000000006, -63.60661], [44.69993, -63.606500000000004], [44.69986, -63.60645], [44.699720000000006, -63.606370000000005], [44.699580000000005, -63.606280000000005], [44.699560000000005, -63.60627], [44.69944, -63.60618], [44.699360000000006, -63.60611000000001], [44.699310000000004, -63.60607], [44.699220000000004, -63.60598], [44.699090000000005, -63.60586000000001], [44.69886, -63.60558], [44.698750000000004, -63.605430000000005], [44.698620000000005, -63.60526000000001], [44.69838, -63.604960000000005], [44.69816, -63.60464], [44.69809, -63.604530000000004], [44.69798, -63.60437], [44.69792, -63.60427000000001], [44.6976, -63.60381], [44.69744, -63.60356], [44.69731, -63.603390000000005], [44.697050000000004, -63.603010000000005], [44.69689, -63.60278], [44.69668, -63.60249], [44.69664, -63.602410000000006], [44.696630000000006, -63.602410000000006], [44.69661000000001, -63.60237000000001], [44.69651, -63.602250000000005], [44.69633, -63.602050000000006], [44.696310000000004, -63.60204], [44.69615, -63.601870000000005], [44.696000000000005, -63.601710000000004], [44.695800000000006, -63.60155], [44.6957, -63.601510000000005], [44.69554, -63.60143000000001], [44.69523, -63.601130000000005], [44.695060000000005, -63.60092], [44.69485, -63.600640000000006], [44.69478, -63.600550000000005], [44.694680000000005, -63.600410000000004], [44.694680000000005, -63.600410000000004], [44.694630000000004, -63.600350000000006], [44.69438, -63.59998], [44.69426000000001, -63.5998], [44.694230000000005, -63.59975000000001], [44.69413, -63.599610000000006], [44.69409, -63.59955000000001], [44.693960000000004, -63.59935000000001], [44.69355, -63.59873], [44.693380000000005, -63.598490000000005], [44.693130000000004, -63.59817], [44.69296000000001, -63.59796000000001], [44.69285000000001, -63.597860000000004], [44.692710000000005, -63.59772], [44.69241, -63.597480000000004], [44.692330000000005, -63.59742000000001], [44.69221, -63.59733000000001], [44.69202000000001, -63.597190000000005], [44.69174, -63.59700000000001], [44.69138, -63.59676], [44.69117000000001, -63.59657000000001], [44.690940000000005, -63.596410000000006], [44.69070000000001, -63.59624], [44.69024, -63.59592000000001], [44.69019, -63.59588000000001], [44.689820000000005, -63.59561000000001], [44.68968, -63.59552000000001], [44.68966, -63.59550000000001], [44.689620000000005, -63.59548], [44.68961, -63.595470000000006], [44.68938000000001, -63.5953], [44.68919, -63.59517], [44.68903, -63.59505000000001], [44.68858, -63.594730000000006], [44.68838, -63.59458000000001], [44.68817000000001, -63.59443], [44.688050000000004, -63.59434], [44.687870000000004, -63.594190000000005], [44.68761000000001, -63.59400000000001], [44.68751, -63.59393000000001], [44.68694000000001, -63.59353000000001], [44.68688, -63.59349], [44.68605, -63.59291], [44.68553000000001, -63.59254000000001], [44.685500000000005, -63.592510000000004], [44.68542, -63.59246], [44.68526000000001, -63.59235], [44.685190000000006, -63.59230000000001], [44.68517000000001, -63.592290000000006], [44.685030000000005, -63.59219], [44.685030000000005, -63.592180000000006], [44.684850000000004, -63.59207000000001], [44.68479000000001, -63.592040000000004], [44.684740000000005, -63.59203000000001], [44.68468, -63.592020000000005], [44.68450000000001, -63.591860000000004], [44.68433, -63.591710000000006], [44.684180000000005, -63.59160000000001], [44.684140000000006, -63.591570000000004], [44.68392, -63.59143], [44.68343, -63.591100000000004], [44.68336, -63.59104000000001], [44.68327, -63.59098], [44.68316, -63.59089], [44.683020000000006, -63.59078], [44.682900000000004, -63.59066000000001], [44.68281, -63.59056], [44.68274, -63.59048000000001], [44.68258, -63.59028000000001], [44.68256, -63.59026000000001], [44.6824, -63.59], [44.68233, -63.589870000000005], [44.682280000000006, -63.58977000000001], [44.682080000000006, -63.58937], [44.68198, -63.589150000000004], [44.68189, -63.58896000000001], [44.68179000000001, -63.588750000000005], [44.68177, -63.588710000000006], [44.681720000000006, -63.588620000000006], [44.681630000000006, -63.588440000000006], [44.681470000000004, -63.58811000000001], [44.681430000000006, -63.58802000000001], [44.681160000000006, -63.58749], [44.681000000000004, -63.587180000000004], [44.68095, -63.587070000000004], [44.68061, -63.586380000000005], [44.68014, -63.585480000000004], [44.680040000000005, -63.58529000000001], [44.679880000000004, -63.585010000000004], [44.679770000000005, -63.584810000000004], [44.679750000000006, -63.584770000000006], [44.67974, -63.58473000000001], [44.67972, -63.58464000000001], [44.67969, -63.5846], [44.67953000000001, -63.58435000000001], [44.67938, -63.58411], [44.67938, -63.58411], [44.67953000000001, -63.583940000000005], [44.6796, -63.58386000000001], [44.67969, -63.583760000000005], [44.679860000000005, -63.583580000000005], [44.679880000000004, -63.58357], [44.67998, -63.583450000000006], [44.680080000000004, -63.583330000000004], [44.6803, -63.58312000000001], [44.68072, -63.58265000000001], [44.680730000000004, -63.582640000000005], [44.681180000000005, -63.58212], [44.68119, -63.58211000000001], [44.681290000000004, -63.58200000000001], [44.681430000000006, -63.58184000000001], [44.68146, -63.58180000000001], [44.681850000000004, -63.58137000000001], [44.68186, -63.581360000000004], [44.68188000000001, -63.58133000000001], [44.68216, -63.58102]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_4f88c5144aa8696125700cdf15fa3026 = L.polyline(
+                [[44.68216, -63.58102], [44.68227, -63.58090000000001], [44.68256, -63.58059000000001], [44.68281, -63.58032000000001], [44.6833, -63.579800000000006], [44.6833, -63.579800000000006], [44.68321, -63.579660000000004], [44.68281, -63.57898000000001], [44.682520000000004, -63.578500000000005], [44.682300000000005, -63.57813000000001], [44.68218, -63.57790000000001], [44.682120000000005, -63.5778], [44.681830000000005, -63.57732000000001], [44.681560000000005, -63.57686], [44.681340000000006, -63.57649000000001], [44.68084, -63.575610000000005], [44.68084, -63.575610000000005], [44.681380000000004, -63.574960000000004], [44.681630000000006, -63.574630000000006], [44.681700000000006, -63.574560000000005], [44.681900000000006, -63.57430000000001], [44.68218, -63.57396000000001], [44.6822, -63.573930000000004], [44.68231, -63.57379], [44.68236, -63.573730000000005], [44.6824, -63.57367000000001], [44.68244000000001, -63.573620000000005], [44.68249, -63.573550000000004], [44.682550000000006, -63.573460000000004], [44.682570000000005, -63.573440000000005], [44.68262000000001, -63.573370000000004], [44.682840000000006, -63.57305], [44.68287, -63.573010000000004], [44.682900000000004, -63.572950000000006], [44.682990000000004, -63.57282000000001], [44.683130000000006, -63.572610000000005], [44.68323, -63.57247], [44.68327, -63.57229], [44.684000000000005, -63.57124], [44.684090000000005, -63.571110000000004], [44.68412000000001, -63.571070000000006], [44.68423000000001, -63.5709], [44.684490000000004, -63.570550000000004], [44.68450000000001, -63.570530000000005], [44.684870000000004, -63.57007000000001], [44.68491, -63.57003], [44.68525, -63.56962000000001], [44.68525, -63.56962000000001], [44.68536, -63.56926000000001], [44.685390000000005, -63.56906000000001], [44.6854, -63.568900000000006], [44.6854, -63.56864], [44.685390000000005, -63.56861000000001], [44.685300000000005, -63.56844], [44.6852, -63.56826], [44.68506000000001, -63.568000000000005], [44.68502, -63.56794000000001], [44.68497000000001, -63.567840000000004], [44.684920000000005, -63.56776000000001], [44.68489, -63.5677], [44.68489, -63.567660000000004], [44.68486, -63.56757], [44.68484, -63.56748], [44.68484, -63.567460000000004], [44.684830000000005, -63.56738000000001], [44.68482, -63.56729000000001], [44.68482, -63.56720000000001], [44.68482, -63.567080000000004], [44.68482, -63.56707000000001], [44.684830000000005, -63.566970000000005], [44.684830000000005, -63.56694], [44.68484, -63.56694], [44.68484, -63.566880000000005], [44.684850000000004, -63.56683], [44.684920000000005, -63.56656], [44.68495, -63.56647], [44.68497000000001, -63.56642000000001], [44.684990000000006, -63.566390000000006], [44.685030000000005, -63.566320000000005], [44.685080000000006, -63.56626000000001], [44.68513, -63.5662], [44.68518, -63.56615000000001], [44.68524, -63.566100000000006], [44.68535000000001, -63.566010000000006], [44.68556, -63.565870000000004], [44.68569, -63.56579000000001], [44.685880000000004, -63.56566000000001], [44.68603, -63.56553], [44.68614, -63.56541000000001], [44.68620000000001, -63.565340000000006], [44.68625, -63.56528000000001], [44.68629000000001, -63.565220000000004], [44.68634, -63.56514000000001], [44.68639, -63.56506], [44.686440000000005, -63.564960000000006], [44.68652, -63.564780000000006], [44.68656000000001, -63.564690000000006], [44.68663, -63.564490000000006], [44.68667000000001, -63.56432], [44.686690000000006, -63.56421], [44.686710000000005, -63.56407000000001], [44.68672, -63.56392], [44.68672, -63.56372], [44.68672, -63.56353000000001], [44.686710000000005, -63.563430000000004], [44.6867, -63.56338], [44.68668, -63.56324000000001], [44.68665, -63.56313000000001], [44.68661, -63.563010000000006], [44.686550000000004, -63.56284000000001], [44.686550000000004, -63.56284000000001], [44.686460000000004, -63.56275000000001], [44.68645, -63.56273], [44.68638000000001, -63.5626], [44.68648, -63.562490000000004], [44.6867, -63.562290000000004], [44.68695, -63.562070000000006], [44.68695, -63.562070000000006], [44.686580000000006, -63.56177], [44.686420000000005, -63.561640000000004], [44.68627, -63.561510000000006], [44.686130000000006, -63.561400000000006], [44.686130000000006, -63.561400000000006], [44.68614, -63.561370000000004], [44.68621, -63.56123], [44.686260000000004, -63.561110000000006], [44.686280000000004, -63.56103], [44.68629000000001, -63.561020000000006], [44.68632, -63.560880000000004], [44.68634, -63.560790000000004], [44.686350000000004, -63.56073000000001], [44.686370000000004, -63.56062000000001], [44.686370000000004, -63.56054], [44.6863, -63.56047], [44.686240000000005, -63.560430000000004]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_8216dc65ff94b14ec5b972b71d4cbfb8 = L.polyline(
+                [[44.686240000000005, -63.560430000000004], [44.68621, -63.56042000000001], [44.686170000000004, -63.56042000000001], [44.6861, -63.560520000000004], [44.686080000000004, -63.56058000000001], [44.68600000000001, -63.560790000000004], [44.68600000000001, -63.56080000000001], [44.68592, -63.56098000000001], [44.68592, -63.56098000000001], [44.68547, -63.56060000000001], [44.685320000000004, -63.56047], [44.685030000000005, -63.560230000000004], [44.685010000000005, -63.560210000000005], [44.685010000000005, -63.560210000000005], [44.68497000000001, -63.56027], [44.68493, -63.560410000000005], [44.68484, -63.56053000000001], [44.68478, -63.56069000000001], [44.68478, -63.56069000000001], [44.68475, -63.560840000000006], [44.68442, -63.56067], [44.68417, -63.56051000000001], [44.68399, -63.560320000000004], [44.68376000000001, -63.560080000000006], [44.68376000000001, -63.560080000000006], [44.6837, -63.56015000000001], [44.68361, -63.560280000000006], [44.68348, -63.560480000000005], [44.683400000000006, -63.56056], [44.683350000000004, -63.560590000000005], [44.6833, -63.560700000000004], [44.683240000000005, -63.56082000000001], [44.68320000000001, -63.560900000000004], [44.68314, -63.56101], [44.68309000000001, -63.56112], [44.68305, -63.56123], [44.68294, -63.56145000000001], [44.68294, -63.56145000000001], [44.68291000000001, -63.561420000000005], [44.68291000000001, -63.56141], [44.682860000000005, -63.56139], [44.68282000000001, -63.561370000000004], [44.68273000000001, -63.561350000000004], [44.68265, -63.561350000000004], [44.682410000000004, -63.561330000000005], [44.682320000000004, -63.561330000000005], [44.68226000000001, -63.56132], [44.682140000000004, -63.56132], [44.682120000000005, -63.56132], [44.682, -63.561330000000005], [44.681960000000004, -63.56134000000001], [44.68195, -63.56134000000001], [44.68189, -63.56136000000001], [44.681830000000005, -63.56139], [44.68178, -63.561420000000005], [44.68173, -63.561460000000004], [44.68169, -63.56148], [44.681630000000006, -63.56154000000001], [44.68155, -63.56161], [44.68148, -63.56167000000001], [44.680870000000006, -63.56222], [44.68086, -63.56223000000001], [44.68072, -63.562360000000005], [44.68057, -63.56250000000001], [44.67983, -63.563190000000006], [44.679770000000005, -63.563250000000004], [44.67969, -63.563320000000004], [44.67967, -63.56333000000001], [44.67938, -63.56362000000001], [44.679280000000006, -63.56371000000001], [44.679230000000004, -63.56376], [44.67898, -63.563990000000004], [44.67897000000001, -63.56401], [44.67888000000001, -63.56407000000001], [44.67882, -63.56412], [44.678810000000006, -63.56412], [44.67875, -63.564150000000005], [44.67869, -63.56418000000001], [44.678630000000005, -63.56419], [44.67857, -63.56419], [44.678560000000004, -63.56419], [44.67851, -63.56418000000001], [44.67846, -63.564170000000004], [44.67841000000001, -63.56416000000001], [44.678380000000004, -63.56416000000001], [44.678250000000006, -63.56411000000001], [44.678140000000006, -63.56407000000001], [44.67808, -63.564040000000006], [44.67803000000001, -63.564020000000006], [44.677980000000005, -63.56401], [44.67785000000001, -63.56400000000001], [44.67768, -63.56401], [44.67754, -63.56401], [44.67754, -63.56401], [44.6775, -63.56405], [44.67748, -63.564080000000004], [44.67746, -63.564130000000006], [44.67745, -63.564170000000004], [44.67745, -63.56419], [44.677440000000004, -63.564220000000006], [44.677440000000004, -63.56427000000001], [44.67746, -63.56436000000001], [44.67772, -63.56463000000001], [44.67772, -63.56463000000001], [44.677620000000005, -63.565560000000005], [44.67761, -63.5656], [44.67759, -63.565670000000004], [44.67757, -63.56573], [44.677530000000004, -63.5658], [44.67748, -63.56588000000001], [44.67743, -63.56595000000001], [44.67738000000001, -63.566010000000006], [44.677330000000005, -63.56607], [44.677290000000006, -63.566120000000005], [44.677240000000005, -63.56616], [44.677200000000006, -63.566190000000006], [44.67719, -63.566190000000006], [44.677150000000005, -63.56622000000001], [44.67709000000001, -63.566250000000004], [44.677040000000005, -63.56627], [44.67703, -63.56627], [44.67699, -63.56629], [44.676930000000006, -63.566300000000005], [44.67687, -63.56631000000001], [44.67685, -63.56631000000001], [44.67681, -63.566300000000005], [44.676750000000006, -63.566300000000005], [44.67663, -63.566280000000006], [44.676520000000004, -63.56626000000001], [44.676410000000004, -63.56624000000001], [44.676350000000006, -63.566230000000004], [44.676300000000005, -63.56622000000001], [44.67625, -63.56622000000001], [44.676210000000005, -63.566230000000004], [44.676170000000006, -63.566250000000004], [44.676140000000004, -63.56627], [44.67613, -63.566280000000006], [44.676100000000005, -63.56631000000001], [44.675810000000006, -63.56663], [44.675470000000004, -63.566990000000004], [44.67535, -63.56712], [44.67494000000001, -63.56758000000001], [44.67493, -63.56759], [44.67479, -63.56774000000001], [44.674730000000004, -63.567800000000005], [44.67465000000001, -63.56790000000001], [44.674510000000005, -63.56805000000001], [44.67432, -63.568250000000006], [44.67418000000001, -63.568400000000004], [44.67389000000001, -63.56871], [44.673880000000004, -63.56871], [44.673750000000005, -63.568850000000005], [44.67374, -63.56886000000001], [44.673320000000004, -63.569320000000005], [44.67278, -63.56994], [44.67250000000001, -63.570260000000005], [44.67221000000001, -63.57058000000001], [44.672140000000006, -63.570660000000004], [44.671780000000005, -63.57106], [44.671490000000006, -63.57139000000001], [44.67118000000001, -63.571740000000005], [44.671060000000004, -63.571870000000004], [44.67103, -63.57190000000001], [44.67101, -63.57193], [44.670880000000004, -63.572070000000004], [44.67074, -63.57224000000001], [44.67067, -63.57231], [44.67061, -63.57238], [44.670460000000006, -63.57255000000001], [44.670210000000004, -63.57283], [44.67016, -63.572880000000005], [44.66995000000001, -63.573130000000006], [44.66989, -63.573190000000004], [44.66986000000001, -63.573220000000006], [44.669760000000004, -63.57332], [44.6696, -63.5735], [44.66948000000001, -63.57363000000001], [44.66939000000001, -63.57372000000001], [44.66926, -63.57386], [44.66926, -63.57386], [44.669340000000005, -63.574000000000005], [44.669430000000006, -63.57419000000001], [44.66973, -63.57473], [44.66973, -63.57473], [44.66969, -63.574760000000005], [44.66968000000001, -63.574780000000004], [44.66967, -63.5748], [44.66966, -63.574830000000006], [44.66966, -63.57484], [44.66966, -63.57486000000001], [44.66967, -63.574870000000004], [44.6698, -63.575120000000005], [44.669830000000005, -63.575190000000006]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+    
+            var poly_line_ae74e43699afe3b07576171b04c611bc = L.polyline(
+                [[44.669830000000005, -63.575190000000006], [44.669900000000005, -63.57533000000001], [44.670010000000005, -63.57553000000001], [44.67013, -63.57576], [44.67013, -63.57576], [44.67011, -63.57578], [44.66998, -63.57591000000001], [44.66996, -63.57593000000001], [44.66977000000001, -63.57614], [44.66968000000001, -63.576240000000006], [44.669470000000004, -63.57647000000001], [44.669470000000004, -63.57647000000001], [44.669560000000004, -63.576620000000005], [44.66968000000001, -63.57681], [44.669760000000004, -63.576950000000004], [44.66991, -63.57717], [44.67007, -63.577470000000005], [44.67007, -63.577470000000005], [44.67016, -63.57762], [44.67007, -63.57773], [44.670010000000005, -63.57784], [44.669920000000005, -63.578], [44.66987, -63.578070000000004], [44.669830000000005, -63.57815000000001], [44.66969, -63.578320000000005], [44.66962, -63.5784], [44.669500000000006, -63.578570000000006], [44.66942, -63.578680000000006], [44.66917, -63.579060000000005], [44.66902, -63.57914], [44.66897, -63.57920000000001], [44.668940000000006, -63.57929000000001], [44.66892000000001, -63.579330000000006], [44.66888, -63.57938000000001], [44.66883000000001, -63.579440000000005], [44.668730000000004, -63.57956000000001], [44.66837, -63.58001000000001], [44.66798000000001, -63.580470000000005], [44.667840000000005, -63.580650000000006], [44.66769, -63.58082], [44.66769, -63.580830000000006], [44.66761, -63.580920000000006], [44.667550000000006, -63.581], [44.66714, -63.581520000000005], [44.66713, -63.58153000000001], [44.66705, -63.58164000000001], [44.666810000000005, -63.581860000000006], [44.666720000000005, -63.581950000000006], [44.66667, -63.58200000000001], [44.66657, -63.582100000000004], [44.666410000000006, -63.58225], [44.66608, -63.582550000000005], [44.66593, -63.58269000000001], [44.66592000000001, -63.5827], [44.66581, -63.58281], [44.66579, -63.582840000000004], [44.66564, -63.582980000000006], [44.665580000000006, -63.58303000000001], [44.665510000000005, -63.583090000000006], [44.665490000000005, -63.58312000000001], [44.66534, -63.58326], [44.665220000000005, -63.58337], [44.66519, -63.583400000000005], [44.66507000000001, -63.583510000000004], [44.66492, -63.583650000000006], [44.664770000000004, -63.583800000000004], [44.664590000000004, -63.583960000000005], [44.66429, -63.58424000000001], [44.66414, -63.58437000000001], [44.66398, -63.58451000000001], [44.663850000000004, -63.584630000000004], [44.663830000000004, -63.58464000000001], [44.66368000000001, -63.58478], [44.663380000000004, -63.58505], [44.663230000000006, -63.585190000000004], [44.663140000000006, -63.58527000000001], [44.66311, -63.585300000000004], [44.66297, -63.585420000000006], [44.66293, -63.58547000000001], [44.662780000000005, -63.58560000000001], [44.662670000000006, -63.5857], [44.66252, -63.585840000000005], [44.66237, -63.58597], [44.66232, -63.586020000000005], [44.662220000000005, -63.586110000000005], [44.66217, -63.58616000000001], [44.66207000000001, -63.58625000000001], [44.66196, -63.58635], [44.66192, -63.58639000000001], [44.66187, -63.58643000000001], [44.661770000000004, -63.58653], [44.66172, -63.58657], [44.661620000000006, -63.58666], [44.66147, -63.586800000000004], [44.66132, -63.586940000000006], [44.66127, -63.586980000000004], [44.66123, -63.58702], [44.6612, -63.58704], [44.661170000000006, -63.58708000000001], [44.661120000000004, -63.587120000000006], [44.660970000000006, -63.58726000000001], [44.66086000000001, -63.58735000000001], [44.66071, -63.587480000000006], [44.660680000000006, -63.58751], [44.660560000000004, -63.58762000000001], [44.66049, -63.58769], [44.66038, -63.58778], [44.66035, -63.58780000000001], [44.660340000000005, -63.587810000000005], [44.66033, -63.58782000000001], [44.660270000000004, -63.58787], [44.660120000000006, -63.588010000000004], [44.660090000000004, -63.58803], [44.65991, -63.58820000000001], [44.65981, -63.58829000000001], [44.659800000000004, -63.58829000000001], [44.659800000000004, -63.588300000000004], [44.6597, -63.58838000000001], [44.659600000000005, -63.58847000000001], [44.6595, -63.58856000000001], [44.659440000000004, -63.58861], [44.65943, -63.58861], [44.65943, -63.588620000000006], [44.65936000000001, -63.588680000000004], [44.65926, -63.588770000000004], [44.65916000000001, -63.588860000000004], [44.65901, -63.58899], [44.658860000000004, -63.589110000000005], [44.65883, -63.58914000000001], [44.65876, -63.58921000000001], [44.65872, -63.58925000000001], [44.65861, -63.58939000000001], [44.65861, -63.589400000000005], [44.658530000000006, -63.58948], [44.65847, -63.58955], [44.65842000000001, -63.58963000000001], [44.65841, -63.58964], [44.65838, -63.589690000000004], [44.658350000000006, -63.589740000000006], [44.658260000000006, -63.58997000000001], [44.658150000000006, -63.59022], [44.65809, -63.59035000000001], [44.65804000000001, -63.59046000000001], [44.65804000000001, -63.59046000000001], [44.657920000000004, -63.59069], [44.65782, -63.590830000000004], [44.65782, -63.590830000000004], [44.657810000000005, -63.59084000000001], [44.65776, -63.590880000000006], [44.657720000000005, -63.59093000000001], [44.65767, -63.590970000000006], [44.657610000000005, -63.591010000000004], [44.65735, -63.591170000000005], [44.657250000000005, -63.59125], [44.65704, -63.59152], [44.65672000000001, -63.591950000000004], [44.656620000000004, -63.59208], [44.656240000000004, -63.59261000000001], [44.65598000000001, -63.59297000000001], [44.65545, -63.593720000000005], [44.65489, -63.59452], [44.654860000000006, -63.59456000000001], [44.65466000000001, -63.59485000000001], [44.654210000000006, -63.59554000000001], [44.65372000000001, -63.5962], [44.65372000000001, -63.5962], [44.653780000000005, -63.59629], [44.65384, -63.59638], [44.6542, -63.596900000000005]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_05ba1c7d3542671027b4e67c714d687a);
+        
+</script>
+</html>
