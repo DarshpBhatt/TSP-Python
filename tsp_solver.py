@@ -7,7 +7,7 @@ import os
 from googlemaps.exceptions import ApiError
 from ortools.constraint_solver import pywrapcp
 from ortools.constraint_solver import routing_enums_pb2
-import networkx as nx  # Ensure NetworkX is imported
+import networkx as nx  
 
 # Initialize the Google Maps client with your API key
 API_KEY = 'Replace with your actual API key'
@@ -67,10 +67,11 @@ def extract_distances(results, locations):
                 if element['status'] == 'OK' and 'distance' in element:
                     distance_matrix[origin_offset + i][destination_offset + j] = element['distance']['value']
                 else:
-                    distance_matrix[origin_offset + i][destination_offset + j] = MAX_DISTANCE  # Use a large value for unreachable routes
+                    distance_matrix[origin_offset + i][destination_offset + j] = MAX_DISTANCE  # Uses a large value for unreachable routes
     
     return distance_matrix
 
+# algorithum to solve the TSP using otTools
 def solve_tsp_with_ortools(distance_matrix):
     """Solves the TSP using OR-Tools."""
     # Create data model
@@ -118,9 +119,10 @@ def solve_tsp_with_ortools(distance_matrix):
         print("No solution found!")
         return None
 
+#Function to solve the TSP using christofides approach using networkX library
 def solve_tsp_with_christofides(distance_matrix):
     """Solves the TSP using the Christofides algorithm."""
-    n = len(distance_matrix)
+    n = len(distance_matrix) 
     G = nx.Graph()
     
     # Add edges with weights to the graph
@@ -144,22 +146,24 @@ def solve_tsp_with_christofides(distance_matrix):
     
     return route
 
+
 def solve_tsp_with_christofides_2opt(distance_matrix):
     """Solves the TSP using Christofides algorithm followed by 2-opt optimization."""
-    initial_route = solve_tsp_with_christofides(distance_matrix)
+    initial_route = solve_tsp_with_christofides(distance_matrix) #applying christofides approach
     if initial_route is None:
         return None
-    route = two_opt(initial_route, distance_matrix)
+    route = two_opt(initial_route, distance_matrix) #using two-opt approach, on the uresults obtained from christofides
     return route
 
 def solve_tsp_greedy(distance_matrix):
     """Solves the TSP using a greedy approach."""
     INT_MAX = sys.maxsize
-    n = len(distance_matrix)
-    visited = [False] * n
-    route = [0]  # Start at depot
+    n = len(distance_matrix) #total no of locations to visit
+    visited = [False] * n # array to keep track of visited locations
+    route = [0]  # Start at depot/first location
     visited[0] = True
-    
+
+    #for each location finds the nearest location and visits it
     for _ in range(n - 1):
         last = route[-1]
         min_distance = INT_MAX
@@ -171,11 +175,12 @@ def solve_tsp_greedy(distance_matrix):
         if next_node is None:
             print("No unvisited node found")
             return None
-        route.append(next_node)
-        visited[next_node] = True
+        route.append(next_node)#add the next nearest location to path route
+        visited[next_node] = True #marks this location as visited
     
-    # Return to depot
+    # Return to depot/starting location
     route.append(0)
+    #returns an array of best route according to greedy approach
     return route
 
 def solve_tsp_hybrid(distance_matrix):
@@ -191,27 +196,31 @@ def solve_tsp_hybrid(distance_matrix):
 
 def two_opt(route, distance_matrix):
     """Performs 2-opt optimization on the given route."""
+    
+    #Calculates the route distance for a particular route
     def calculate_route_length(route):
         return sum(distance_matrix[route[i]][route[i + 1]] for i in range(len(route) - 1))
     
-    improved = True
-    best_route = route.copy()
+    improved = True # checks if an improvement can be made
+    best_route = route.copy() #initially best possible is given route
     best_distance = calculate_route_length(best_route)
-    
+
+    #loops as long as shorter route can be found by edge reversal
     while improved:
         improved = False
         for i in range(1, len(best_route) - 2):
             for j in range(i + 1, len(best_route) - 1):
-                if j - i == 1:
+                if j - i == 1: # adjuscent locations don't needto be switched, thus breaks loop
                     continue
-                new_route = best_route[:i] + best_route[i:j][::-1] + best_route[j:]
-                new_distance = calculate_route_length(new_route)
+                new_route = best_route[:i] + best_route[i:j][::-1] + best_route[j:] #swaps two pairs of edges (edge reversal)
+                new_distance = calculate_route_length(new_route) #checks efficiency of new route
                 if new_distance < best_distance:
                     best_route = new_route
                     best_distance = new_distance
                     improved = True
         route = best_route
     
+    #returns an array of best route according to greedy approach
     return route
 
 def plot_route(route, locations_df, filename):
